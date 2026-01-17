@@ -61,20 +61,35 @@
       color: #666;
     }
     .atomic-number {
-      font-size: 18px;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      font-size: 16px;
       font-weight: bold;
+    }
+    .mass {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 14px;
     }
     .symbol {
       font-size: 72px;
       font-weight: bold;
       line-height: 1;
+      margin-top: 20px;
     }
     .name {
       font-size: 24px;
       font-weight: bold;
+      margin: 10px 0;
     }
-    .mass {
-      font-size: 16px;
+    .card-category {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #ddd;
     }
     .details {
       background: white;
@@ -120,9 +135,10 @@
   <div id="element-display">
     <div class="element-card">
       <div class="atomic-number" id="atomic-number">--</div>
+      <div class="mass" id="mass">--</div>
       <div class="symbol" id="symbol">?</div>
       <div class="name" id="name">Loading...</div>
-      <div class="mass" id="mass">--</div>
+      <div class="card-category" id="card-category">--</div>
     </div>
     
     <div class="details">
@@ -165,6 +181,7 @@
       document.getElementById('symbol').textContent = el.symbol;
       document.getElementById('name').textContent = el.name;
       document.getElementById('mass').textContent = el.atomic_mass;
+      document.getElementById('card-category').textContent = el.category;
       document.getElementById('category').textContent = el.category;
       document.getElementById('state').textContent = el.standard_state;
       document.getElementById('electron-config').textContent = el.electron_configuration;
