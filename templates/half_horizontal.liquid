@@ -31,25 +31,42 @@
     </div>
     
     <!-- Element Details -->
-    <div class="flex flex--col gap--xsmall stretch">
-      <div class="value value--large mb--xsmall">
-        {{ element.category | upcase }}
-      </div>
-      
+    <div class="flex flex--col gap--xsmall stretch">      
       <div class="flex flex--col gap--xsmall">
-        <div class="flex flex--row gap--small flex--wrap">
-          <span class="label label--small label--underline">State</span>
-          <span class="description">{{ element.standard_state }}</span>
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">State</span>
+              <span class="description">{{ element.standard_state }}</span>
+            </div>
+          </div>
         </div>
         
-        <div class="flex flex--row gap--small flex--wrap">
-          <span class="label label--small label--underline">Config</span>
-          <span class="description" data-clamp="1">{{ element.electron_configuration }}</span>
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Electron Config</span>
+              <span class="description" data-clamp="1">{{ element.electron_configuration }}</span>
+            </div>
+          </div>
         </div>
         
-        <div class="flex flex--row gap--small flex--wrap">
-          <span class="label label--small label--underline">Discovered</span>
-          <span class="description">{{ element.year_discovered }}</span>
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Density</span>
+              <span class="description">{{ element.density }} g/cm³</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Discovered</span>
+              <span class="description">{{ element.year_discovered }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
