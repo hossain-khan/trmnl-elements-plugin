@@ -18,44 +18,7 @@ private_variables:
     type: string
     value: Element of the Day
 
-custom_fields:
-  - keyname: author_bio
-    name: About This Plugin
-    field_type: author_bio
-    category: education,discovery
-    description: |
-      Element of the Day brings the wonder of chemistry to your TRMNL device by displaying a different element from the Periodic Table each day (or hour).
-      <br><br>
-      <strong>Features:</strong><br>
-      🔬 118 elements with comprehensive scientific data<br>
-      ⏰ Daily rotation or hourly random display modes<br>
-      📊 Atomic number, mass, electron configuration, and more<br>
-      🎨 Periodic table-style card design<br>
-      📱 Four optimized layouts (Full, Half Horizontal, Half Vertical, Quadrant)<br>
-      ⚡ Fast static data delivery via GitHub Pages<br>
-      🧪 Data sourced from PubChem database
-      <br><br>
-      <strong>Setup:</strong><br>
-      1. Install or Fork this recipe<br>
-      2. Choose your preferred display mode (Daily or Hourly)<br>
-      3. Select your favorite layout size<br>
-      4. Add to your playlist and learn chemistry one element at a time
-      <br><br>
-      Perfect for students, educators, science enthusiasts, or anyone curious about the building blocks of matter. Each element includes atomic properties, physical characteristics, and historical discovery information.
-      <br><br>
-      <strong>Data Source:</strong> All 118 elements verified from PubChem (National Center for Biotechnology Information)
-    github_url: https://github.com/hossain-khan/trmnl-elements-plugin
-    learn_more_url: https://hossain-khan.github.io/trmnl-elements-plugin/
-    email_address: trmnl@hossain.dev
-  - keyname: display_mode
-    field_type: select
-    name: Display Mode
-    description: Choose how elements are selected
-    options:
-      - Daily Rotation: daily
-      - Hourly Random: hourly
-    default: daily
-    help_text: Daily Rotation cycles through all 118 elements based on the day of year. Hourly Random shows a different element each hour.
+# `custom_fields` is moved to `custom-fields.yml` for better organization.
 
 layouts:
   - name: full
