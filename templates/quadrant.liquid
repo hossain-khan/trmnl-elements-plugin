@@ -1,20 +1,19 @@
 <div class="layout">
-  <div class="grid">
-    <div class="col col--center">
-      <div style="border: 2px solid black; padding: 8px; text-align: center; background: white;">
-        <div style="font-size: 12px; font-weight: bold; font-family: 'Courier New', monospace;">
-          {{ element.atomic_number }}
-        </div>
-        <div style="font-size: 36px; font-weight: bold; font-family: 'Courier New', monospace; line-height: 1;">
-          {{ element.symbol }}
-        </div>
-        <div style="font-size: 12px; font-weight: bold; font-family: 'Courier New', monospace;">
-          {{ element.name }}
-        </div>
+  <div class="flex flex--col flex--center gap--xsmall">
+    <div class="outline rounded p--small text--center bg--white">
+      <div class="value value--small value--tnums">
+        {{ element.atomic_number }}
       </div>
-      <div style="font-family: 'Courier New', monospace; font-size: 10px; margin-top: 4px; text-align: center;">
-        {{ element.category }}
+      <div class="value value--xlarge" style="line-height: 1;">
+        {{ element.symbol }}
       </div>
+      <div class="value value--small">
+        {{ element.name }}
+      </div>
+    </div>
+    
+    <div class="label label--small text--center">
+      {{ element.category }}
     </div>
   </div>
 </div>

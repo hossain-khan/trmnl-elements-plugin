@@ -1,27 +1,31 @@
 <div class="layout">
-  <div class="grid gap--small">
+  <div class="flex flex--col gap--medium flex--center-x">
     <!-- Element Card -->
-    <div class="col col--center">
-      <div style="border: 3px solid black; padding: 12px; text-align: center; background: white; width: 180px; margin: 0 auto;">
-        <div style="font-size: 16px; font-weight: bold; font-family: 'Courier New', monospace;">
-          {{ element.atomic_number }}
-        </div>
-        <div style="font-size: 56px; font-weight: bold; font-family: 'Courier New', monospace; line-height: 1;">
-          {{ element.symbol }}
-        </div>
-        <div style="font-size: 18px; font-weight: bold; font-family: 'Courier New', monospace;">
-          {{ element.name }}
-        </div>
-        <div style="font-size: 12px; font-family: 'Courier New', monospace;">
-          {{ element.atomic_mass }}
-        </div>
+    <div class="outline rounded--large p--medium text--center bg--white w--44">
+      <div class="value value--medium value--tnums">
+        {{ element.atomic_number }}
+      </div>
+      <div class="value value--xxlarge" style="line-height: 1;">
+        {{ element.symbol }}
+      </div>
+      <div class="title title--small">
+        {{ element.name }}
+      </div>
+      <div class="value value--small value--tnums">
+        {{ element.atomic_mass }}
       </div>
     </div>
+    
     <!-- Element Details -->
-    <div class="col col--center">
-      <div style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.5; text-align: center;">
-        <div style="font-weight: bold; margin-bottom: 4px;">{{ element.category | upcase }}</div>
-        <div>{{ element.standard_state }} · {{ element.year_discovered }}</div>
+    <div class="flex flex--col gap--xsmall text--center">
+      <div class="value value--large">
+        {{ element.category | upcase }}
+      </div>
+      
+      <div class="flex flex--row gap--xsmall flex--center-x flex--wrap">
+        <span class="label label--small">{{ element.standard_state }}</span>
+        <span class="description">·</span>
+        <span class="label label--small">{{ element.year_discovered }}</span>
       </div>
     </div>
   </div>

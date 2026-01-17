@@ -1,37 +1,98 @@
 <div class="layout">
-  <div class="grid gap--medium">
-    <div class="row">
-      <!-- Element Card (Periodic Table Style) -->
-      <div class="col col--span-1">
-        <div style="border: 4px solid black; padding: 16px; text-align: center; background: white;">
-          <div style="font-size: 24px; font-weight: bold; font-family: 'Courier New', monospace;">
-            {{ element.atomic_number }}
-          </div>
-          <div style="font-size: 96px; font-weight: bold; font-family: 'Courier New', monospace; line-height: 1;">
-            {{ element.symbol }}
-          </div>
-          <div style="font-size: 28px; font-weight: bold; font-family: 'Courier New', monospace;">
-            {{ element.name }}
-          </div>
-          <div style="font-size: 20px; font-family: 'Courier New', monospace;">
-            {{ element.atomic_mass }}
-          </div>
-        </div>
+  <div class="flex flex--row gap--large portrait:flex--col">
+    <!-- Element Card (Periodic Table Style) -->
+    <div class="outline rounded--large p--large text--center bg--white flex-none">
+      <div class="value value--large value--tnums md:value--xlarge">
+        {{ element.atomic_number }}
       </div>
-      <!-- Element Details -->
-      <div class="col col--span-2" style="padding-left: 24px;">
-        <div class="value value--large" style="font-family: 'Courier New', monospace; margin-bottom: 12px;">
-          {{element.category | upcase }}
+      <div class="value value--xxxlarge md:value--xxxlarge lg:value--xxxlarge" style="font-size: 96px; line-height: 1;">
+        {{ element.symbol }}
+      </div>
+      <div class="title md:title--small">
+        {{ element.name }}
+      </div>
+      <div class="value value--large value--tnums md:value--xlarge">
+        {{ element.atomic_mass }}
+      </div>
+    </div>
+    
+    <!-- Element Details -->
+    <div class="flex flex--col gap--small stretch">
+      <div class="value value--xlarge md:value--xxlarge mb--small">
+        {{ element.category | upcase }}
+      </div>
+      
+      <div class="flex flex--col gap--xsmall">
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">State</span>
+              <span class="description">{{ element.standard_state }}</span>
+            </div>
+          </div>
         </div>
-        <div style="font-family: 'Courier New', monospace; font-size: 18px; line-height: 1.6;">
-          <div><strong>State:</strong> {{element.standard_state }}</div>
-          <div><strong>Electron Config:</strong> {{element.electron_configuration }}</div>
-          <div><strong>Electronegativity:</strong> {{element.electronegativity }}</div>
-          <div><strong>Melting Point:</strong> {{element.melting_point }}</div>
-          <div><strong>Boiling Point:</strong> {{element.boiling_point }}</div>
-          <div><strong>Density:</strong> {{element.density }} g/cm³</div>
-          <div><strong>Oxidation States:</strong> {{element.oxidation_states }}</div>
-          <div><strong>Discovered:</strong> {{element.year_discovered }}</div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Electron Config</span>
+              <span class="description" data-clamp="1">{{ element.electron_configuration }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Electronegativity</span>
+              <span class="description">{{ element.electronegativity }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Melting Point</span>
+              <span class="description">{{ element.melting_point }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Boiling Point</span>
+              <span class="description">{{ element.boiling_point }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Density</span>
+              <span class="description">{{ element.density }} g/cm³</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Oxidation States</span>
+              <span class="description">{{ element.oxidation_states }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Discovered</span>
+              <span class="description">{{ element.year_discovered }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>

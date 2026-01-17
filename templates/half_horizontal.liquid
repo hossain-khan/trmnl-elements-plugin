@@ -1,30 +1,41 @@
 <div class="layout">
-  <div class="grid gap--small">
-    <div class="row">
-      <!-- Element Card -->
-      <div class="col col--span-1">
-        <div style="border: 3px solid black; padding: 12px; text-align: center; background: white;">
-          <div style="font-size: 18px; font-weight: bold; font-family: 'Courier New', monospace;">
-            {{ element.atomic_number }}
-          </div>
-          <div style="font-size: 64px; font-weight: bold; font-family: 'Courier New', monospace; line-height: 1;">
-            {{ element.symbol }}
-          </div>
-          <div style="font-size: 20px; font-weight: bold; font-family: 'Courier New', monospace;">
-            {{ element.name }}
-          </div>
-          <div style="font-size: 14px; font-family: 'Courier New', monospace;">
-            {{ element.atomic_mass }}
-          </div>
-        </div>
+  <div class="flex flex--row gap--medium portrait:flex--col">
+    <!-- Element Card -->
+    <div class="outline rounded--large p--medium text--center bg--white flex-none">
+      <div class="value value--medium value--tnums sm:value--large">
+        {{ element.atomic_number }}
       </div>
-      <!-- Element Details -->
-      <div class="col col--span-2" style="padding-left: 16px;">
-        <div style="font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.5;">
-          <div style="font-weight: bold; margin-bottom: 8px;">{{ element.category | upcase }}</div>
-          <div><strong>State:</strong> {{ element.standard_state }}</div>
-          <div><strong>Config:</strong> {{ element.electron_configuration }}</div>
-          <div><strong>Discovered:</strong> {{ element.year_discovered }}</div>
+      <div class="value value--xxlarge sm:value--xxxlarge" style="line-height: 1;">
+        {{ element.symbol }}
+      </div>
+      <div class="title title--small">
+        {{ element.name }}
+      </div>
+      <div class="value value--small value--tnums sm:value--medium">
+        {{ element.atomic_mass }}
+      </div>
+    </div>
+    
+    <!-- Element Details -->
+    <div class="flex flex--col gap--xsmall stretch">
+      <div class="value value--large mb--xsmall">
+        {{ element.category | upcase }}
+      </div>
+      
+      <div class="flex flex--col gap--xsmall">
+        <div class="flex flex--row gap--small flex--wrap">
+          <span class="label label--small label--underline">State</span>
+          <span class="description">{{ element.standard_state }}</span>
+        </div>
+        
+        <div class="flex flex--row gap--small flex--wrap">
+          <span class="label label--small label--underline">Config</span>
+          <span class="description" data-clamp="1">{{ element.electron_configuration }}</span>
+        </div>
+        
+        <div class="flex flex--row gap--small flex--wrap">
+          <span class="label label--small label--underline">Discovered</span>
+          <span class="description">{{ element.year_discovered }}</span>
         </div>
       </div>
     </div>
