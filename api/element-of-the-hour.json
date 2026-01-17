@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "100",
-    "symbol": "Fm",
-    "name": "Fermium",
-    "atomic_mass": "257.09511",
+    "atomic_number": "101",
+    "symbol": "Md",
+    "name": "Mendelevium",
+    "atomic_mass": "258.09843",
     "category": "Actinide",
     "standard_state": "Solid",
-    "electron_configuration": "[Rn] 5f12 7s2",
+    "electron_configuration": "[Rn]7s2 5f13",
     "electronegativity": "1.3",
-    "melting_point": "1800 K",
+    "melting_point": "1100 K",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "+3",
-    "year_discovered": "1952",
-    "updated_at": "2026-01-17T19:01:20.989Z"
+    "oxidation_states": "+3, +2",
+    "year_discovered": "1955",
+    "updated_at": "2026-01-17T20:01:25.465Z"
   }
 }
