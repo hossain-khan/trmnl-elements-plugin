@@ -34,6 +34,21 @@
   {% assign element_index = day_of_year | modulo: total_elements %}
 {% endif %}
 
+{% comment %}
+  DEV TESTING: Override element_index to test specific elements
+  Uncomment the line below and set to desired element index (0-117) to test specific elements
+  Examples:
+  - Element 99 (Einsteinium, 252.0830): {% assign element_index = 98 %}
+  - Element 100 (Fermium, 257.09511): {% assign element_index = 99 %}
+  - Element 101 (Mendelevium, 258.09843): {% assign element_index = 100 %}
+  - Element 102 (Nobelium, 259.10100): {% assign element_index = 101 %}
+  - Element 59 (Praseodymium, long name): {% assign element_index = 58 %}
+  - Element 104 (Rutherfordium, longest name): {% assign element_index = 103 %}
+  
+  To disable override: Simply comment out or delete the override line below
+{% endcomment %}
+{% comment %} {% assign element_index = 99 %} {% endcomment %}
+
 {% comment %} Get the element for this period {% endcomment %}
 {% assign element = all_elements[element_index] %}
 
