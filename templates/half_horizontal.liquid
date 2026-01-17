@@ -31,7 +31,13 @@
     </div>
     
     <!-- Element Details -->
-    <div class="flex flex--col gap--xsmall stretch">      
+    <div class="flex flex--col gap--xsmall stretch">
+      <!-- Element name and category header -->
+      <div class="flex flex--row flex--between gap--small mb--xsmall flex--wrap">
+        <div class="title">{{ element.name }}</div>
+        <div class="value value--large">{{ element.category | upcase }}</div>
+      </div>
+      
       <div class="flex flex--col gap--xsmall">
         <div class="item">
           <div class="content">
