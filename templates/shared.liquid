@@ -5,7 +5,8 @@
 {% endcomment %}
 
 {% comment %} Load all elements data {% endcomment %}
-{% assign all_elements = data-all.json %}
+{% assign data_all = data-all.json %}
+{% assign all_elements = data_all.elements %}
 
 {% comment %} Calculate day of year (1-366) {% endcomment %}
 {% assign current_date = "now" | date: "%s" %}

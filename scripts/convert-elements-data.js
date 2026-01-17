@@ -39,7 +39,7 @@ function mapElementData(cell, columnIndex) {
 /**
  * Convert PubChem periodic table data to simplified format
  * @param {string} inputPath - Path to PubChemElements_all.json
- * @returns {Array} Array of element objects
+ * @returns {Object} Object containing metadata and elements array
  */
 function convertElementsData(inputPath = null) {
   // Use default path if not provided
@@ -62,30 +62,39 @@ function convertElementsData(inputPath = null) {
     mapElementData(row.Cell, columnIndex)
   );
 
-  return elements;
+  // Return object with metadata and elements array
+  return {
+    metadata: {
+      total_elements: elements.length,
+      data_source: 'PubChem',
+      generated_at: new Date().toISOString(),
+      description: 'Complete periodic table data with all 118 elements'
+    },
+    elements: elements
+  };
 }
 
 /**
  * Write elements array to output file
- * @param {Array} elements - Array of element objects
+ * @param {Object} data - Object containing metadata and elements array
  * @param {string} outputPath - Path to output file
  */
-function writeElementsFile(elements, outputPath = null) {
+function writeElementsFile(data, outputPath = null) {
   if (!outputPath) {
     outputPath = path.join(__dirname, '..', 'data-all.json');
   }
 
-  fs.writeFileSync(outputPath, JSON.stringify(elements, null, 2));
+  fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
 }
 
 // Main execution (only run if called directly, not when required as a module)
 if (require.main === module) {
-  const elements = convertElementsData();
-  writeElementsFile(elements);
+  const data = convertElementsData();
+  writeElementsFile(data);
 
-  console.log(`✓ Converted ${elements.length} elements to data-all.json`);
-  console.log(`  First element: ${elements[0].name} (${elements[0].symbol})`);
-  console.log(`  Last element: ${elements[elements.length - 1].name} (${elements[elements.length - 1].symbol})`);
+  console.log(`✓ Converted ${data.elements.length} elements to data-all.json`);
+  console.log(`  First element: ${data.elements[0].name} (${data.elements[0].symbol})`);
+  console.log(`  Last element: ${data.elements[data.elements.length - 1].name} (${data.elements[data.elements.length - 1].symbol})`);
 }
 
 // Export functions for testing

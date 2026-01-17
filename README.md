@@ -134,40 +134,50 @@ npm run convert
 This generates `data-all.json` containing an array of all 118 elements with the following structure:
 
 ```json
-[
-  {
-    "atomic_number": "1",
-    "symbol": "H",
-    "name": "Hydrogen",
-    "atomic_mass": "1.0080",
-    "cpk_hex_color": "FFFFFF",
-    "electron_configuration": "1s1",
-    "electronegativity": "2.2",
-    "atomic_radius": "120",
-    "ionization_energy": "13.598",
-    "electron_affinity": "0.754",
-    "oxidation_states": "+1, -1",
-    "standard_state": "Gas",
-    "melting_point": "13.81",
-    "boiling_point": "20.28",
-    "density": "0.00008988",
-    "category": "Nonmetal",
-    "year_discovered": "1766"
-  }
-]
+{
+  "metadata": {
+    "total_elements": 118,
+    "data_source": "PubChem",
+    "generated_at": "2026-01-17T12:00:00.000Z",
+    "description": "Complete periodic table data with all 118 elements"
+  },
+  "elements": [
+    {
+      "atomic_number": "1",
+      "symbol": "H",
+      "name": "Hydrogen",
+      "atomic_mass": "1.0080",
+      "cpk_hex_color": "FFFFFF",
+      "electron_configuration": "1s1",
+      "electronegativity": "2.2",
+      "atomic_radius": "120",
+      "ionization_energy": "13.598",
+      "electron_affinity": "0.754",
+      "oxidation_states": "+1, -1",
+      "standard_state": "Gas",
+      "melting_point": "13.81",
+      "boiling_point": "20.28",
+      "density": "0.00008988",
+      "category": "Nonmetal",
+      "year_discovered": "1766"
+    }
+  ]
+}
 ```
 
 This simplified format is useful for:
-- Direct array iteration and filtering
+- Direct array iteration and filtering via `data.elements`
 - Client-side element lookups
 - Building custom periodic table visualizations
 - Educational applications requiring full element data
+- Metadata tracking (source, generation time, totals)
 
 ### Template Architecture
 
 The plugin uses a shared template pattern for element selection:
 
-**`templates/shared.liquid`** - Core element selection logic
+**`templates/shared.liquimetadata + 118 elements array)
+- Accesses elements via `data_all.elements`nt selection logic
 - Loads `data-all.json` (all 118 elements)
 - Calculates day of year from current date
 - Selects element using modulo 118 for daily rotation

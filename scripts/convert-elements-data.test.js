@@ -107,17 +107,21 @@ function runTests() {
   // Test convertElementsData with real data
   test('convertElementsData - reads and converts real data file', () => {
     const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
-    const elements = convertElementsData(dataPath);
+    const data = convertElementsData(dataPath);
 
-    assert.ok(Array.isArray(elements), 'Should return an array');
-    assert.strictEqual(elements.length, 118, 'Should have 118 elements');
+    assert.ok(typeof data === 'object', 'Should return an object');
+    assert.ok(data.metadata, 'Should have metadata property');
+    assert.ok(data.elements, 'Should have elements property');
+    assert.ok(Array.isArray(data.elements), 'Elements should be an array');
+    assert.strictEqual(data.elements.length, 118, 'Should have 118 elements');
+    assert.strictEqual(data.metadata.total_elements, 118, 'Metadata should show 118 elements');
   });
 
   test('convertElementsData - first element is Hydrogen', () => {
     const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
-    const elements = convertElementsData(dataPath);
+    const data = convertElementsData(dataPath);
 
-    const hydrogen = elements[0];
+    const hydrogen = data.elements[0];
     assert.strictEqual(hydrogen.atomic_number, '1');
     assert.strictEqual(hydrogen.symbol, 'H');
     assert.strictEqual(hydrogen.name, 'Hydrogen');
@@ -125,17 +129,28 @@ function runTests() {
 
   test('convertElementsData - last element is Oganesson', () => {
     const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
-    const elements = convertElementsData(dataPath);
+    const data = convertElementsData(dataPath);
 
-    const oganesson = elements[117];
+    const oganesson = data.elements[117];
     assert.strictEqual(oganesson.atomic_number, '118');
     assert.strictEqual(oganesson.symbol, 'Og');
     assert.strictEqual(oganesson.name, 'Oganesson');
   });
 
+  test('convertElementsData - metadata contains required fields', () => {
+    const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
+    const data = convertElementsData(dataPath);
+
+    assert.ok(data.metadata.total_elements, 'Should have total_elements');
+    assert.ok(data.metadata.data_source, 'Should have data_source');
+    assert.ok(data.metadata.generated_at, 'Should have generated_at timestamp');
+    assert.ok(data.metadata.description, 'Should have description');
+    assert.strictEqual(data.metadata.data_source, 'PubChem');
+  });
+
   test('convertElementsData - all elements have required fields', () => {
     const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
-    const elements = convertElementsData(dataPath);
+    const data = convertElementsData(dataPath);
 
     const requiredFields = [
       'atomic_number',
@@ -148,7 +163,7 @@ function runTests() {
       'year_discovered'
     ];
 
-    elements.forEach((element, index) => {
+    data.elements.forEach((element, index) => {
       requiredFields.forEach(field => {
         assert.ok(
           element.hasOwnProperty(field),
@@ -164,29 +179,29 @@ function runTests() {
 
   test('convertElementsData - Noble gases have zero oxidation states', () => {
     const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
-    const elements = convertElementsData(dataPath);
+    const data = convertElementsData(dataPath);
 
-    const nobleGases = elements.filter(e => e.category === 'Noble gas');
+    const nobleGases = data.elements.filter(e => e.category === 'Noble gas');
     assert.ok(nobleGases.length >= 6, 'Should have at least 6 noble gases');
 
     // Check Helium
-    const helium = elements.find(e => e.symbol === 'He');
+    const helium = data.elements.find(e => e.symbol === 'He');
     assert.strictEqual(helium.oxidation_states, '0');
   });
 
   test('convertElementsData - validates specific element properties', () => {
     const dataPath = path.join(__dirname, '..', 'data', 'PubChemElements_all.json');
-    const elements = convertElementsData(dataPath);
+    const data = convertElementsData(dataPath);
 
     // Check Gold (Au)
-    const gold = elements.find(e => e.symbol === 'Au');
+    const gold = data.elements.find(e => e.symbol === 'Au');
     assert.strictEqual(gold.atomic_number, '79');
     assert.strictEqual(gold.name, 'Gold');
     assert.strictEqual(gold.category, 'Transition metal');
     assert.strictEqual(gold.year_discovered, 'Ancient');
 
     // Check Carbon (C)
-    const carbon = elements.find(e => e.symbol === 'C');
+    const carbon = data.elements.find(e => e.symbol === 'C');
     assert.strictEqual(carbon.atomic_number, '6');
     assert.strictEqual(carbon.name, 'Carbon');
     assert.strictEqual(carbon.category, 'Nonmetal');
@@ -194,39 +209,51 @@ function runTests() {
 
   // Test writeElementsFile
   test('writeElementsFile - creates valid JSON file', () => {
-    const testElements = [
-      {
-        atomic_number: '1',
-        symbol: 'H',
-        name: 'Hydrogen',
-        atomic_mass: '1.0080',
-        cpk_hex_color: 'FFFFFF',
-        electron_configuration: '1s1',
-        electronegativity: '2.2',
-        atomic_radius: '120',
-        ionization_energy: '13.598',
-        electron_affinity: '0.754',
-        oxidation_states: '+1, -1',
-        standard_state: 'Gas',
-        melting_point: '13.81',
-        boiling_point: '20.28',
-        density: '0.00008988',
-        category: 'Nonmetal',
-        year_discovered: '1766'
-      }
-    ];
+    const testData = {
+      metadata: {
+        total_elements: 1,
+        data_source: 'PubChem',
+        generated_at: new Date().toISOString(),
+        description: 'Test data'
+      },
+      elements: [
+        {
+          atomic_number: '1',
+          symbol: 'H',
+          name: 'Hydrogen',
+          atomic_mass: '1.0080',
+          cpk_hex_color: 'FFFFFF',
+          electron_configuration: '1s1',
+          electronegativity: '2.2',
+          atomic_radius: '120',
+          ionization_energy: '13.598',
+          electron_affinity: '0.754',
+          oxidation_states: '+1, -1',
+          standard_state: 'Gas',
+          melting_point: '13.81',
+          boiling_point: '20.28',
+          density: '0.00008988',
+          category: 'Nonmetal',
+          year_discovered: '1766'
+        }
+      ]
+    };
 
     const tempPath = path.join(__dirname, '..', '.test-data-all.json');
 
     try {
-      writeElementsFile(testElements, tempPath);
+      writeElementsFile(testData, tempPath);
 
       assert.ok(fs.existsSync(tempPath), 'Should create output file');
 
       const content = JSON.parse(fs.readFileSync(tempPath, 'utf8'));
-      assert.ok(Array.isArray(content), 'Content should be an array');
-      assert.strictEqual(content.length, 1, 'Should have 1 element');
-      assert.strictEqual(content[0].symbol, 'H', 'Element should be Hydrogen');
+      assert.ok(typeof content === 'object', 'Content should be an object');
+      assert.ok(content.metadata, 'Should have metadata');
+      assert.ok(content.elements, 'Should have elements array');
+      assert.ok(Array.isArray(content.elements), 'Elements should be an array');
+      assert.strictEqual(content.elements.length, 1, 'Should have 1 element');
+      assert.strictEqual(content.elements[0].symbol, 'H', 'Element should be Hydrogen');
+      assert.strictEqual(content.metadata.total_elements, 1);
     } finally {
       // Cleanup
       try {
@@ -238,20 +265,24 @@ function runTests() {
   });
 
   test('writeElementsFile - output is properly formatted JSON', () => {
-    const testElements = [
-      { atomic_number: '1', symbol: 'H', name: 'Hydrogen' },
-      { atomic_number: '2', symbol: 'He', name: 'Helium' }
-    ];
+    const testData = {
+      metadata: { total_elements: 2, data_source: 'Test' },
+      elements: [
+        { atomic_number: '1', symbol: 'H', name: 'Hydrogen' },
+        { atomic_number: '2', symbol: 'He', name: 'Helium' }
+      ]
+    };
 
     const tempPath = path.join(__dirname, '..', '.test-data-all.json');
 
     try {
-      writeElementsFile(testElements, tempPath);
+      writeElementsFile(testData, tempPath);
 
       const content = fs.readFileSync(tempPath, 'utf8');
       
       // Should be pretty-printed with 2-space indentation
-      assert.ok(content.includes('  "atomic_number"'), 'Should have indented JSON');
+      assert.ok(content.includes('  "metadata"'), 'Should have indented JSON');
+      assert.ok(content.includes('  "elements"'), 'Should have elements key');
       assert.ok(content.includes('\n'), 'Should have newlines');
     } finally {
       // Cleanup
