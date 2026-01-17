@@ -150,7 +150,13 @@
       <div class="property"><strong>Melting Point:</strong> <span id="melting-point">--</span></div>
       <div class="property"><strong>Boiling Point:</strong> <span id="boiling-point">--</span></div>
       <div class="property"><strong>Density:</strong> <span id="density">--</span></div>
-    <p>All Elements: <a href="data-all.json">data-all.json</a></p>
+      <div class="property"><strong>Oxidation States:</strong> <span id="oxidation-states">--</span></div>
+      <div class="property"><strong>Year Discovered:</strong> <span id="year-discovered">--</span></div>
+    </div>
+    
+    <div class="api-link">
+      <p>All Elements: <a href="data-all.json">data-all.json</a></p>
+    </div>
   </div>
   
   <div class="footer">
@@ -228,14 +234,7 @@
       } else if (e.key === 'ArrowRight' && currentIndex < allElements.length - 1) {
         navigateElement(1);
       }
-      document.getElementById('density').textContent = el.density !== 'N/A' ? el.density + ' g/cm³' : 'N/A';
-        document.getElementById('oxidation-states').textContent = el.oxidation_states;
-        document.getElementById('year-discovered').textContent = el.year_discovered;
-      })
-      .catch(error => {
-        console.error('Error loading element data:', error);
-        document.getElementById('name').textContent = 'Error loading data';
-      });
+    });
   </script>
 </body>
 </html>
