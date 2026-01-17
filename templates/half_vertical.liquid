@@ -4,24 +4,24 @@
     <div class="col col--center">
       <div style="border: 3px solid black; padding: 12px; text-align: center; background: white; width: 180px; margin: 0 auto;">
         <div style="font-size: 16px; font-weight: bold; font-family: 'Courier New', monospace;">
-          {{ data.element.atomic_number }}
+          {{ element.atomic_number }}
         </div>
         <div style="font-size: 56px; font-weight: bold; font-family: 'Courier New', monospace; line-height: 1;">
-          {{ data.element.symbol }}
+          {{ element.symbol }}
         </div>
         <div style="font-size: 18px; font-weight: bold; font-family: 'Courier New', monospace;">
-          {{ data.element.name }}
+          {{ element.name }}
         </div>
         <div style="font-size: 12px; font-family: 'Courier New', monospace;">
-          {{ data.element.atomic_mass }}
+          {{ element.atomic_mass }}
         </div>
       </div>
     </div>
     <!-- Element Details -->
     <div class="col col--center">
       <div style="font-family: 'Courier New', monospace; font-size: 12px; line-height: 1.5; text-align: center;">
-        <div style="font-weight: bold; margin-bottom: 4px;">{{ data.element.category | upcase }}</div>
-        <div>{{ data.element.standard_state }} · {{ data.element.year_discovered }}</div>
+        <div style="font-weight: bold; margin-bottom: 4px;">{{ element.category | upcase }}</div>
+        <div>{{ element.standard_state }} · {{ element.year_discovered }}</div>
       </div>
     </div>
   </div>

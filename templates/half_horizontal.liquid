@@ -5,26 +5,26 @@
       <div class="col col--span-1">
         <div style="border: 3px solid black; padding: 12px; text-align: center; background: white;">
           <div style="font-size: 18px; font-weight: bold; font-family: 'Courier New', monospace;">
-            {{ data.element.atomic_number }}
+            {{ element.atomic_number }}
           </div>
           <div style="font-size: 64px; font-weight: bold; font-family: 'Courier New', monospace; line-height: 1;">
-            {{ data.element.symbol }}
+            {{ element.symbol }}
           </div>
           <div style="font-size: 20px; font-weight: bold; font-family: 'Courier New', monospace;">
-            {{ data.element.name }}
+            {{ element.name }}
           </div>
           <div style="font-size: 14px; font-family: 'Courier New', monospace;">
-            {{ data.element.atomic_mass }}
+            {{ element.atomic_mass }}
           </div>
         </div>
       </div>
       <!-- Element Details -->
       <div class="col col--span-2" style="padding-left: 16px;">
         <div style="font-family: 'Courier New', monospace; font-size: 14px; line-height: 1.5;">
-          <div style="font-weight: bold; margin-bottom: 8px;">{{ data.element.category | upcase }}</div>
-          <div><strong>State:</strong> {{ data.element.standard_state }}</div>
-          <div><strong>Config:</strong> {{ data.element.electron_configuration }}</div>
-          <div><strong>Discovered:</strong> {{ data.element.year_discovered }}</div>
+          <div style="font-weight: bold; margin-bottom: 8px;">{{ element.category | upcase }}</div>
+          <div><strong>State:</strong> {{ element.standard_state }}</div>
+          <div><strong>Config:</strong> {{ element.electron_configuration }}</div>
+          <div><strong>Discovered:</strong> {{ element.year_discovered }}</div>
         </div>
       </div>
     </div>
