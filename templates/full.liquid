@@ -1,13 +1,13 @@
 <div class="layout">
   <div class="flex flex--row gap--large portrait:flex--col">
     <!-- Element Card (Periodic Table Style) -->
-    <div class="outline rounded p--3 bg--white no-shrink w--52 min-w--52">
+    <div class="outline rounded p--3 bg--white no-shrink min-w--52">
       <!-- Top row: Atomic number (left) and Atomic mass (right) -->
-      <div class="flex flex--row flex--between mb--small">
+      <div class="flex flex--row flex--between gap--small mb--small">
         <div class="value value--medium value--tnums md:value--large lg:value--xlarge">
           {{ element.atomic_number }}
         </div>
-        <div class="value value--small value--tnums md:value--medium" data-value-fit="true">
+        <div class="value value--small value--tnums md:value--medium">
           {{ element.atomic_mass }}
         </div>
       </div>

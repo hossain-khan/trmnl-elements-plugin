@@ -141,7 +141,8 @@ The plugin provides four layouts for different display configurations:
 
 **Critical Learnings**:
 - Use `grid--cols-*` for precise column control (better than flex-wrap)
-- Fixed width (`w--52`) prevents cards from becoming too narrow with short names (e.g., Lithium)
+- Use `min-w--52` without `w--` to allow card to grow with long atomic masses (e.g., "259.10100")
+- Combine `min-w--` with `gap--small` in flex rows to prevent content touching edges
 - `data-value-fit` with `max-height` essential for long names (e.g., RUTHERFORDIUM - 13 chars)
 - `title` element handles long single-word text better than `value` element
 
@@ -256,6 +257,7 @@ For element names that may be very long (e.g., "RUTHERFORDIUM" - 13 characters):
 - Use when content varies (short vs long names)
 - Example: `w--52 min-w--52` in full layout
 - Prevents card from shrinking with short names (e.g., Lithium)
+- **WARNING**: Fixed widths (`w--52`) prevent horizontal growth - content may get cut off
 
 **Responsive widths** (for flexibility):
 - Use when adapting to different screen sizes
@@ -265,6 +267,14 @@ For element names that may be very long (e.g., "RUTHERFORDIUM" - 13 characters):
 **Minimum widths** (for safety):
 - Always set `min-w--*` to prevent content cutoff
 - Critical for atomic numbers (3-4 chars) and masses (up to 9 chars)
+- **BEST PRACTICE**: Use `min-w--52` without `w--` to allow horizontal growth
+- Example: Element 102's atomic mass "259.10100" (9 chars) needs room to expand
+
+**Key Insight - Fixed vs Minimum Width**:
+- `w--52 min-w--52` = **Fixed width** - Card cannot grow, content may overflow
+- `min-w--52` (no `w--`) = **Minimum width** - Card can grow horizontally as needed
+- Use minimum-only when content length varies significantly (atomic masses: 4-9 chars)
+- Combine with `gap--small` in flex containers for proper spacing between items
 
 ### 4. Grid vs Flexbox
 
@@ -303,11 +313,12 @@ For vertically centering content in horizontal layouts:
 
 ### Issue 1: Atomic Mass Cutoff
 
-**Problem**: Long atomic masses (e.g., "252.0830" - 8 chars) get cut off
+**Problem**: Long atomic masses (e.g., "259.10100" - 9 chars) get cut off
 
 **Solution**:
-- Increase minimum card width (`min-w--40`, `min-w--52`)
-- Add `data-value-fit="true"` to atomic mass value
+- Use `min-w--52` without `w--` to allow card to grow horizontally
+- Add `gap--small` to flex row with `flex--between` for proper spacing
+- Remove fixed width constraints that prevent horizontal growth
 
 ### Issue 2: Long Element Names Breaking Layout
 
