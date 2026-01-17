@@ -1,9 +1,10 @@
 <div class="layout">
-  <div class="flex flex--col flex--center gap--xsmall">
-    <div class="outline rounded p--2 bg--white no-shrink min-w--32">
+  <div class="flex flex--row gap--medium portrait:flex--col p--2 flex--center-y">
+    <!-- Element Card -->
+    <div class="outline rounded p--2 bg--white no-shrink w--32 min-w--32">
       <!-- Top row: Atomic number (left) and Atomic mass (right) -->
       <div class="flex flex--row flex--between mb--xsmall">
-        <div class="value value--xxsmall value--tnums">
+        <div class="value value--xsmall value--tnums">
           {{ element.atomic_number }}
         </div>
         <div class="value value--xxsmall value--tnums" data-value-fit="true">
@@ -22,6 +23,33 @@
       <div class="text--center">
         <div class="value value--xxsmall">
           {{ element.name }}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Element Details -->
+    <div class="flex flex--col gap--xsmall">
+      <div class="mb--xsmall">
+        <div class="title title--small md:title--large">{{ element.name }}</div>
+      </div>
+      
+      <div class="flex flex--col gap--xsmall">
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">State</span>
+              <span class="description">{{ element.standard_state }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Category</span>
+              <span class="description" data-clamp="1">{{ element.category }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
