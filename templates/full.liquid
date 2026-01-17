@@ -24,7 +24,7 @@
         <div class="title md:title--small mb--xsmall">
           {{ element.name }}
         </div>
-        <div class="label label--small label--gray">
+        <div class="label label--inverted">
           {{ element.category }}
         </div>
       </div>
@@ -32,8 +32,10 @@
     
     <!-- Element Details -->
     <div class="flex flex--col gap--small stretch">
-      <div class="value value--large md:value--xlarge lg:value--xxlarge mb--small">
-        {{ element.category | upcase }}
+      <div class="mb--small">
+        <div class="title title--large md:title--xlarge" data-value-fit="true" data-value-fit-max-height="120">
+          {{ element.name | upcase }}
+        </div>
       </div>
       
       <!-- 1 column on small, 2 columns on medium, 3 columns on large screens -->

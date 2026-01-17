@@ -24,7 +24,7 @@
         <div class="title title--small mb--xsmall">
           {{ element.name }}
         </div>
-        <div class="label label--small label--gray">
+        <div class="label label--inverted">
           {{ element.category }}
         </div>
       </div>
@@ -35,7 +35,7 @@
       <!-- Element name and category header -->
       <div class="flex flex--row flex--between gap--small mb--xsmall flex--wrap">
         <div class="title">{{ element.name }}</div>
-        <div class="value value--large md:value--xlarge lg:value--xxlarge">{{ element.category | upcase }}</div>
+        <div class="title title--medium md:title--large" data-value-fit="true" data-value-fit-max-height="80">{{ element.category | upcase }}</div>
       </div>
       
       <div class="flex flex--col gap--xsmall">
