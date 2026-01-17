@@ -1,18 +1,32 @@
 <div class="layout">
   <div class="flex flex--row gap--medium portrait:flex--col">
     <!-- Element Card -->
-    <div class="outline rounded--large p--medium text--center bg--white flex-none">
-      <div class="value value--medium value--tnums sm:value--large">
-        {{ element.atomic_number }}
+    <div class="outline rounded--large p--medium bg--white flex-none">
+      <!-- Top row: Atomic number (left) and Atomic mass (right) -->
+      <div class="flex flex--row flex--between mb--small">
+        <div class="value value--medium value--tnums sm:value--large">
+          {{ element.atomic_number }}
+        </div>
+        <div class="value value--xsmall value--tnums sm:value--small">
+          {{ element.atomic_mass }}
+        </div>
       </div>
-      <div class="value value--xxlarge sm:value--xxxlarge" style="line-height: 1;">
-        {{ element.symbol }}
+      
+      <!-- Center: Symbol (large) -->
+      <div class="text--center mb--xsmall">
+        <div class="value value--xxlarge sm:value--xxxlarge" style="line-height: 1;">
+          {{ element.symbol }}
+        </div>
       </div>
-      <div class="title title--small">
-        {{ element.name }}
-      </div>
-      <div class="value value--small value--tnums sm:value--medium">
-        {{ element.atomic_mass }}
+      
+      <!-- Bottom: Element name and category -->
+      <div class="text--center">
+        <div class="title title--small mb--xsmall">
+          {{ element.name }}
+        </div>
+        <div class="label label--small label--gray">
+          {{ element.category }}
+        </div>
       </div>
     </div>
     

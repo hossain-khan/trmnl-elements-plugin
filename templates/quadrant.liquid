@@ -1,19 +1,29 @@
 <div class="layout">
   <div class="flex flex--col flex--center gap--xsmall">
-    <div class="outline rounded p--small text--center bg--white">
-      <div class="value value--small value--tnums">
-        {{ element.atomic_number }}
+    <div class="outline rounded p--small bg--white">
+      <!-- Top row: Atomic number (left) and Atomic mass (right) -->
+      <div class="flex flex--row flex--between mb--xsmall">
+        <div class="value value--xxsmall value--tnums">
+          {{ element.atomic_number }}
+        </div>
+        <div class="value value--xxsmall value--tnums" style="font-size: 8px;">
+          {{ element.atomic_mass }}
+        </div>
       </div>
-      <div class="value value--xlarge" style="line-height: 1;">
-        {{ element.symbol }}
+      
+      <!-- Center: Symbol (large) -->
+      <div class="text--center mb--xsmall">
+        <div class="value value--xlarge" style="line-height: 1;">
+          {{ element.symbol }}
+        </div>
       </div>
-      <div class="value value--small">
-        {{ element.name }}
+      
+      <!-- Bottom: Element name -->
+      <div class="text--center">
+        <div class="value value--xxsmall">
+          {{ element.name }}
+        </div>
       </div>
-    </div>
-    
-    <div class="label label--small text--center">
-      {{ element.category }}
     </div>
   </div>
 </div>

@@ -1,18 +1,32 @@
 <div class="layout">
   <div class="flex flex--row gap--large portrait:flex--col">
     <!-- Element Card (Periodic Table Style) -->
-    <div class="outline rounded--large p--large text--center bg--white flex-none">
-      <div class="value value--large value--tnums md:value--xlarge">
-        {{ element.atomic_number }}
+    <div class="outline rounded--large p--large bg--white flex-none">
+      <!-- Top row: Atomic number (left) and Atomic mass (right) -->
+      <div class="flex flex--row flex--between mb--medium">
+        <div class="value value--large value--tnums md:value--xlarge">
+          {{ element.atomic_number }}
+        </div>
+        <div class="value value--small value--tnums md:value--medium">
+          {{ element.atomic_mass }}
+        </div>
       </div>
-      <div class="value value--xxxlarge md:value--xxxlarge lg:value--xxxlarge" style="font-size: 96px; line-height: 1;">
-        {{ element.symbol }}
+      
+      <!-- Center: Symbol (large) -->
+      <div class="text--center mb--small">
+        <div class="value value--xxxlarge" style="font-size: 96px; line-height: 1;">
+          {{ element.symbol }}
+        </div>
       </div>
-      <div class="title md:title--small">
-        {{ element.name }}
-      </div>
-      <div class="value value--large value--tnums md:value--xlarge">
-        {{ element.atomic_mass }}
+      
+      <!-- Bottom: Element name and category -->
+      <div class="text--center">
+        <div class="title md:title--small mb--xsmall">
+          {{ element.name }}
+        </div>
+        <div class="label label--small label--gray">
+          {{ element.category }}
+        </div>
       </div>
     </div>
     
