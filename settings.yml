@@ -18,6 +18,17 @@ private_variables:
     type: string
     value: Element of the Day
 
+custom_fields:
+  - keyname: display_mode
+    field_type: select
+    name: Display Mode
+    description: Choose how elements are selected
+    options:
+      - Daily Rotation: daily
+      - Hourly Random: hourly
+    default: daily
+    help_text: Daily Rotation cycles through all 118 elements based on the day of year. Hourly Random shows a different element each hour.
+
 layouts:
   - name: full
     label: Full Screen

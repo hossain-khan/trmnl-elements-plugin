@@ -1,7 +1,8 @@
 {% comment %}
-  Shared template for Element of the Day selection logic
-  This file calculates which element to display based on the current day of the year,
-  cycling through all 118 elements on a 118-day rotation.
+  Shared template for Element selection logic
+  This file calculates which element to display based on user configuration:
+  - Daily Rotation: Cycles through all 118 elements based on day of year
+  - Hourly Random: Shows a different element each hour based on hour identifier
 {% endcomment %}
 
 {% comment %}
@@ -10,17 +11,30 @@
 {% endcomment %}
 {% assign all_elements = elements %}
 
-{% comment %} Calculate day of year (1-366) {% endcomment %}
-{% assign current_date = "now" | date: "%s" %}
-{% assign year_start = "now" | date: "%Y-01-01" | date: "%s" %}
-{% assign seconds_diff = current_date | minus: year_start %}
-{% assign day_of_year = seconds_diff | divided_by: 86400 | plus: 1 %}
+{% comment %} Get user's display mode preference (daily or hourly) {% endcomment %}
+{% assign display_mode = trmnl.plugin_settings.custom_fields_values.display_mode | default: "daily" %}
 
-{% comment %} Calculate element index (0-117) using modulo 118 {% endcomment %}
-{% assign total_elements = all_elements | size %}
-{% assign element_index = day_of_year | modulo: total_elements %}
+{% if display_mode == "hourly" %}
+  {% comment %} Hourly mode: Calculate element based on current hour {% endcomment %}
+  {% assign current_year = "now" | date: "%Y" %}
+  {% assign current_month = "now" | date: "%m" %}
+  {% assign current_day = "now" | date: "%d" %}
+  {% assign current_hour = "now" | date: "%H" %}
+  {% assign hour_identifier = current_year | append: current_month | append: current_day | append: current_hour %}
+  {% assign hour_id_number = hour_identifier | plus: 0 %}
+  {% assign total_elements = all_elements | size %}
+  {% assign element_index = hour_id_number | modulo: total_elements %}
+{% else %}
+  {% comment %} Daily mode: Calculate element based on day of year (default) {% endcomment %}
+  {% assign current_date = "now" | date: "%s" %}
+  {% assign year_start = "now" | date: "%Y-01-01" | date: "%s" %}
+  {% assign seconds_diff = current_date | minus: year_start %}
+  {% assign day_of_year = seconds_diff | divided_by: 86400 | plus: 1 %}
+  {% assign total_elements = all_elements | size %}
+  {% assign element_index = day_of_year | modulo: total_elements %}
+{% endif %}
 
-{% comment %} Get the element for today {% endcomment %}
+{% comment %} Get the element for this period {% endcomment %}
 {% assign element = all_elements[element_index] %}
 
 {% comment %}

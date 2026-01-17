@@ -9,10 +9,12 @@ A TRMNL plugin that displays a different element from the Periodic Table each da
 ## Features
 
 - 🔬 **Daily Element Rotation** - See a new element every day (118-day cycle)
+- ⏰ **Hourly Random Option** - Configurable hourly element changes for more variety
 - 📊 **Comprehensive Data** - Atomic number, symbol, name, mass, category, and more
 - 🎨 **Periodic Table Style** - Clean design inspired by classic periodic table tiles
 - 📱 **Multiple Layouts** - Full screen, half horizontal, half vertical, and quadrant views
 - ⚡ **Fast & Reliable** - Static data served via GitHub Pages
+- ⚙️ **User Configurable** - Choose between daily or hourly display modes
 
 ## Install
 
@@ -21,7 +23,10 @@ A TRMNL plugin that displays a different element from the Periodic Table each da
 1. Visit [TRMNL Plugins](https://usetrmnl.com/plugins)
 2. Search for "**Element of the Day**"
 3. Click **Install**
-4. Add to your [Playlist](https://usetrmnl.com/playlists)
+4. Configure your preferred **Display Mode**:
+   - **Daily Rotation**: Cycles through all 118 elements based on day of year (default)
+   - **Hourly Random**: Shows a different element each hour for more frequent changes
+5. Add to your [Playlist](https://usetrmnl.com/playlists)
 
 ## Layouts
 
@@ -50,11 +55,19 @@ Each element includes:
 
 ## API Endpoint
 
-The plugin uses a static JSON endpoint that updates daily:
+The plugin uses static JSON endpoints that update automatically:
 
+### Daily Rotation Mode
 ```
 https://hossain-khan.github.io/trmnl-elements-plugin/api/element-of-the-day.json
 ```
+Updates: Once per day at 2 AM UTC
+
+### Hourly Random Mode
+```
+https://hossain-khan.github.io/trmnl-elements-plugin/api/element-of-the-hour.json
+```
+Updates: Every hour on the hour
 
 ### Example Response
 
@@ -91,10 +104,24 @@ https://hossain-khan.github.io/trmnl-elements-plugin/api/element-of-the-day.json
 
 2. Generate element data
    ```bash
+   # For daily rotation
    node scripts/update-element-of-the-day.js
+   
+   # For hourly random
+   node scripts/update-element-of-the-hour.js
    ```
 
 3. Test locally by opening `templates/*.liquid` files
+
+### Configuration
+
+Users can configure the display mode through the plugin settings:
+
+- **Display Mode**: Dropdown to choose between:
+  - `Daily Rotation` - Cycles through all 118 elements based on day of year (default)
+  - `Hourly Random` - Shows a different element each hour based on hour identifier
+
+The templates automatically adapt based on the user's selection using conditional logic in `shared.liquid`.
 
 ### Testing
 
@@ -107,16 +134,18 @@ npm test
 Run individual test suites:
 
 ```bash
-npm run test:element   # Test element-of-the-day script
-npm run test:convert   # Test data conversion script
+npm run test:element          # Test daily element script
+npm run test:element-hourly   # Test hourly element script
+npm run test:convert          # Test data conversion script
 ```
 
 The test suites verify:
 - ✅ Day of year calculations (including leap years)
-- ✅ Element index mapping (118-day cycle)
+- ✅ Hour identifier calculations (YYYYMMDDHH format)
+- ✅ Element index mapping (118-cycle for both daily and hourly)
 - ✅ Data formatting and N/A handling
 - ✅ File output generation
-- ✅ Cycle consistency (day 1 = day 119)
+- ✅ Cycle consistency (deterministic selection)
 - ✅ Data conversion from nested to flat structure
 - ✅ Proper field mapping and null handling
 - ✅ Complete element data validation
@@ -174,13 +203,14 @@ This simplified format is useful for:
 
 ### Template Architecture
 
-The plugin uses a shared template pattern for element selection:
+The plugin uses a shared template pattern with conditional display mode logic:
 
-**`templates/shared.liquimetadata + 118 elements array)
-- Accesses elements via `data_all.elements`nt selection logic
-- Loads `data-all.json` (all 118 elements)
-- Calculates day of year from current date
-- Selects element using modulo 118 for daily rotation
+**`templates/shared.liquid`**
+- Central element selection logic with display mode support
+- Loads `elements` from static data (all 118 elements via `data-all.json`)
+- **Daily Rotation Mode**: Calculates day of year and uses modulo 118
+- **Hourly Random Mode**: Calculates hour identifier (YYYYMMDDHH) and uses modulo 118
+- Selects appropriate element based on user's configured display mode
 - Makes `element` variable available to all templates
 - Automatically included by TRMNL portal before rendering layout templates
 
@@ -188,8 +218,9 @@ All layout templates (`full.liquid`, `half_horizontal.liquid`, `half_vertical.li
 
 This architecture allows:
 - **Centralized logic**: Element selection code maintained in one place
+- **Flexible modes**: Easy switching between daily and hourly displays
 - **Client-side rendering**: No server-side API calls needed
-- **Deterministic selection**: Same day = same element across all layouts
+- **Deterministic selection**: Same period = same element across all layouts
 - **Easy testing**: Shared logic can be validated independently
 
 ### Data Source
@@ -198,17 +229,21 @@ Element data is sourced from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) and st
 
 ### GitHub Actions
 
-Two workflows automate the plugin:
+Three workflows automate the plugin:
 
 - **`pages.yml`** - Deploys to GitHub Pages on push to main
-- **`update-element.yml`** - Updates element data daily at 2 AM UTC
+- **`update-element.yml`** - Updates daily element data at 2 AM UTC (runs daily)
+- **`update-element-hourly.yml`** - Updates hourly element data (runs every hour)
+
+Both element update workflows can be triggered manually via workflow_dispatch.
 
 ### Project Structure
 
 ```
 trmnl-elements-plugin/
 ├── api/
-│   └── element-of-the-day.json  # Daily element endpoint
+│   ├── element-of-the-day.json  # Daily element endpoint
+│   └── element-of-the-hour.json # Hourly element endpoint
 ├── assets/
 │   ├── demo/                    # Demo screenshots
 │   └── icon/                    # Plugin icon
@@ -219,19 +254,22 @@ trmnl-elements-plugin/
 │   ├── NEW_RECIPE_GUIDE.md      # Recipe creation guide
 │   └── PRD.md                   # Product requirements
 ├── scripts/
-│   ├── update-element-of-the-day.js      # Daily element generator
-│   ├── update-element-of-the-day.test.js # Tests for element generator
-│   ├── convert-elements-data.js          # Data format converter
-│   └── convert-elements-data.test.js     # Tests for converter
+│   ├── update-element-of-the-day.js       # Daily element generator
+│   ├── update-element-of-the-day.test.js  # Tests for daily generator
+│   ├── update-element-of-the-hour.js      # Hourly element generator
+│   ├── update-element-of-the-hour.test.js # Tests for hourly generator
+│   ├── convert-elements-data.js           # Data format converter
+│   └── convert-elements-data.test.js      # Tests for converter
 ├── templates/
-│   ├── shared.liquid            # Shared element selection logic
+│   ├── shared.liquid            # Shared element selection logic (daily/hourly)
 │   ├── full.liquid              # Full screen layout
 │   ├── half_horizontal.liquid   # Half horizontal layout
 │   ├── half_vertical.liquid     # Half vertical layout
 │   └── quadrant.liquid          # Quadrant layout
 ├── .github/workflows/
 │   ├── pages.yml                # GitHub Pages deployment
-│   └── update-element.yml       # Daily data update
+│   ├── update-element.yml       # Daily data update (2 AM UTC)
+│   └── update-element-hourly.yml # Hourly data update (every hour)
 ├── data.json                    # Current element data
 ├── data-all.json                # All elements (flat array, generated)
 ├── package.json                 # Node scripts and metadata
