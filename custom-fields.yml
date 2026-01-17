@@ -1,4 +1,5 @@
 # This file contains custom fields for the TRMNL Elements Plugin
+# Dev Documentation: https://help.usetrmnl.com/en/articles/10513740-custom-plugin-form-builder
 - keyname: author_bio
   name: About This Plugin
   field_type: author_bio
@@ -34,5 +35,5 @@
   options:
     - Daily Rotation: daily
     - Hourly Random: hourly
-  default: daily
+  default: hourly
   help_text: Daily Rotation cycles through all 118 elements based on the day of year. Hourly Random shows a different element each hour.
