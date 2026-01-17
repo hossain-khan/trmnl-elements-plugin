@@ -1,7 +1,7 @@
 <div class="layout">
   <div class="flex flex--col gap--medium flex--center-x">
     <!-- Element Card -->
-    <div class="outline rounded p--3 bg--white no-shrink min-w--48">
+    <div class="outline rounded p--3 bg--white no-shrink w--52 min-w--52">
       <!-- Top row: Atomic number (left) and Atomic mass (right) -->
       <div class="flex flex--row flex--between mb--small">
         <div class="value value--small value--tnums sm:value--medium md:value--medium">
@@ -24,22 +24,56 @@
         <div class="title title--small mb--xsmall">
           {{ element.name }}
         </div>
-        <div class="label label--inverted">
+        <div class="label label--small label--inverted">
           {{ element.category }}
         </div>
       </div>
     </div>
     
     <!-- Element Details -->
-    <div class="flex flex--col gap--xsmall text--center">
-      <div class="title title--large md:title--xlarge" data-value-fit="true" data-value-fit-max-height="100">
-        {{ element.category | upcase }}
+    <div class="flex flex--col gap--xsmall">
+      <div class="mb--xsmall text--center">
+        <div class="title title--large md:title--xlarge" data-value-fit="true" data-value-fit-max-height="100">
+          {{ element.name | upcase }}
+        </div>
       </div>
       
-      <div class="flex flex--row gap--xsmall flex--center-x flex--wrap">
-        <span class="label label--small">{{ element.standard_state }}</span>
-        <span class="description">·</span>
-        <span class="label label--small">{{ element.year_discovered }}</span>
+      <div class="flex flex--col gap--xsmall">
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">State</span>
+              <span class="description">{{ element.standard_state }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Density</span>
+              <span class="description">{{ element.density }} g/cm³</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Electron Config</span>
+              <span class="description" data-clamp="1">{{ element.electron_configuration }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small flex--wrap">
+              <span class="label label--small label--underline">Discovered</span>
+              <span class="description">{{ element.year_discovered }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
