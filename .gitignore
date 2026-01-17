@@ -139,7 +139,6 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .DS_Store
 
-# Generated data files
-data-all.json
+# Test temporary files
 .test-data-all.json
 .test-output/
