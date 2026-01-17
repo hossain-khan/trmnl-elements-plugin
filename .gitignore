@@ -138,3 +138,8 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .DS_Store
+
+# Generated data files
+data-all.json
+.test-data-all.json
+.test-output/

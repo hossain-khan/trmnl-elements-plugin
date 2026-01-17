@@ -104,14 +104,64 @@ Run the unit tests to ensure the element selection logic works correctly:
 npm test
 ```
 
-The test suite verifies:
+Run individual test suites:
+
+```bash
+npm run test:element   # Test element-of-the-day script
+npm run test:convert   # Test data conversion script
+```
+
+The test suites verify:
 - ✅ Day of year calculations (including leap years)
 - ✅ Element index mapping (118-day cycle)
 - ✅ Data formatting and N/A handling
 - ✅ File output generation
 - ✅ Cycle consistency (day 1 = day 119)
+- ✅ Data conversion from nested to flat structure
+- ✅ Proper field mapping and null handling
+- ✅ Complete element data validation
 
-Tests are implemented using Node.js `assert` module and can be run without any external dependencies.
+All tests are implemented using Node.js `assert` module and can be run without any external dependencies.
+
+### Data Conversion
+
+Convert the nested PubChem data structure to a simplified flat array format:
+
+```bash
+npm run convert
+```
+
+This generates `data-all.json` containing an array of all 118 elements with the following structure:
+
+```json
+[
+  {
+    "atomic_number": "1",
+    "symbol": "H",
+    "name": "Hydrogen",
+    "atomic_mass": "1.0080",
+    "cpk_hex_color": "FFFFFF",
+    "electron_configuration": "1s1",
+    "electronegativity": "2.2",
+    "atomic_radius": "120",
+    "ionization_energy": "13.598",
+    "electron_affinity": "0.754",
+    "oxidation_states": "+1, -1",
+    "standard_state": "Gas",
+    "melting_point": "13.81",
+    "boiling_point": "20.28",
+    "density": "0.00008988",
+    "category": "Nonmetal",
+    "year_discovered": "1766"
+  }
+]
+```
+
+This simplified format is useful for:
+- Direct array iteration and filtering
+- Client-side element lookups
+- Building custom periodic table visualizations
+- Educational applications requiring full element data
 
 ### Data Source
 
@@ -135,12 +185,15 @@ trmnl-elements-plugin/
 │   └── icon/                    # Plugin icon
 ├── data/
 │   ├── PubChemElements_all.csv  # Raw CSV data
-│   └── PubChemElements_all.json # Raw JSON data
+│   └── PubChemElements_all.json # Raw JSON data (nested structure)
 ├── docs/
 │   ├── NEW_RECIPE_GUIDE.md      # Recipe creation guide
 │   └── PRD.md                   # Product requirements
 ├── scripts/
-│   └── update-element-of-the-day.js  # Data generator
+│   ├── update-element-of-the-day.js      # Daily element generator
+│   ├── update-element-of-the-day.test.js # Tests for element generator
+│   ├── convert-elements-data.js          # Data format converter
+│   └── convert-elements-data.test.js     # Tests for converter
 ├── templates/
 │   ├── full.liquid              # Full screen layout
 │   ├── half_horizontal.liquid   # Half horizontal layout
@@ -150,6 +203,8 @@ trmnl-elements-plugin/
 │   ├── pages.yml                # GitHub Pages deployment
 │   └── update-element.yml       # Daily data update
 ├── data.json                    # Current element data
+├── data-all.json                # All elements (flat array, generated)
+├── package.json                 # Node scripts and metadata
 ├── settings.yml                 # TRMNL plugin config
 └── README.md
 ```
