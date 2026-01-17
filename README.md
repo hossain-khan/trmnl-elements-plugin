@@ -21,11 +21,11 @@ Learn chemistry one element at a time! Display a different element from the Peri
 ## Demo
 
 | Layout | Preview |
-|--------|--------|
-| **Full** | Responsive 1-3 column grid with element card and 6 properties |
-| **Half Horizontal** | Compact horizontal layout with 6 properties in 2x3 grid |
-| **Half Vertical** | Vertical layout with card and 4 essential properties |
-| **Quadrant** | Minimal view with card and 2 properties |
+|--------|---------|
+| **Full** | ![Full Layout](assets/demo/plugin-demo-max-payne-full.png)<br>Responsive 1-3 column grid with element card and 12 properties |
+| **Half Horizontal** | ![Half Horizontal Layout](assets/demo/plugin-demo-max-payne-half-horizontal.png)<br>Compact horizontal layout with 6 properties in 2x3 grid |
+| **Half Vertical** | ![Half Vertical Layout](assets/demo/plugin-demo-max-payne-half-vertical.png)<br>Vertical layout with card and 4 essential properties |
+| **Quadrant** | ![Quadrant Layout](assets/demo/plugin-demo-max-payne-quadrant.png)<br>Minimal view with card and 2 properties |
 
 ## Features
 
