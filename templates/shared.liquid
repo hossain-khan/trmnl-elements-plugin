@@ -1,0 +1,42 @@
+{% comment %}
+  Shared template for Element of the Day selection logic
+  This file calculates which element to display based on the current day of the year,
+  cycling through all 118 elements on a 118-day rotation.
+{% endcomment %}
+
+{% comment %} Load all elements data {% endcomment %}
+{% assign all_elements = data-all.json %}
+
+{% comment %} Calculate day of year (1-366) {% endcomment %}
+{% assign current_date = "now" | date: "%s" %}
+{% assign year_start = "now" | date: "%Y-01-01" | date: "%s" %}
+{% assign seconds_diff = current_date | minus: year_start %}
+{% assign day_of_year = seconds_diff | divided_by: 86400 | plus: 1 %}
+
+{% comment %} Calculate element index (0-117) using modulo 118 {% endcomment %}
+{% assign total_elements = all_elements | size %}
+{% assign element_index = day_of_year | modulo: total_elements %}
+
+{% comment %} Get the element for today {% endcomment %}
+{% assign element = all_elements[element_index] %}
+
+{% comment %}
+  The 'element' variable is now available with the following properties:
+  - element.atomic_number
+  - element.symbol
+  - element.name
+  - element.atomic_mass
+  - element.cpk_hex_color
+  - element.electron_configuration
+  - element.electronegativity
+  - element.atomic_radius
+  - element.ionization_energy
+  - element.electron_affinity
+  - element.oxidation_states
+  - element.standard_state
+  - element.melting_point
+  - element.boiling_point
+  - element.density
+  - element.category
+  - element.year_discovered
+{% endcomment %}

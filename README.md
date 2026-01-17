@@ -163,6 +163,25 @@ This simplified format is useful for:
 - Building custom periodic table visualizations
 - Educational applications requiring full element data
 
+### Template Architecture
+
+The plugin uses a shared template pattern for element selection:
+
+**`templates/shared.liquid`** - Core element selection logic
+- Loads `data-all.json` (all 118 elements)
+- Calculates day of year from current date
+- Selects element using modulo 118 for daily rotation
+- Makes `element` variable available to all templates
+- Automatically included by TRMNL portal before rendering layout templates
+
+All layout templates (`full.liquid`, `half_horizontal.liquid`, `half_vertical.liquid`, `quadrant.liquid`) access the `element` variable provided by the shared template.
+
+This architecture allows:
+- **Centralized logic**: Element selection code maintained in one place
+- **Client-side rendering**: No server-side API calls needed
+- **Deterministic selection**: Same day = same element across all layouts
+- **Easy testing**: Shared logic can be validated independently
+
 ### Data Source
 
 Element data is sourced from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) and stored in `data/PubChemElements_all.json`.
@@ -195,6 +214,7 @@ trmnl-elements-plugin/
 │   ├── convert-elements-data.js          # Data format converter
 │   └── convert-elements-data.test.js     # Tests for converter
 ├── templates/
+│   ├── shared.liquid            # Shared element selection logic
 │   ├── full.liquid              # Full screen layout
 │   ├── half_horizontal.liquid   # Half horizontal layout
 │   ├── half_vertical.liquid     # Half vertical layout
