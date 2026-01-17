@@ -32,7 +32,7 @@
     
     <!-- Element Details -->
     <div class="flex flex--col gap--small stretch">
-      <div class="mb--small">
+      <div class="mb--6">
         <div class="title title--large md:title--xlarge" data-value-fit="true" data-value-fit-max-height="120">
           {{ element.name | upcase }}
         </div>
@@ -108,6 +108,42 @@
             <div class="flex flex--row gap--small">
               <span class="label label--small label--outline">Discovered</span>
               <span class="description">{{ element.year_discovered }}</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Atomic Radius</span>
+              <span class="description">{{ element.atomic_radius }} pm</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Ionization Energy</span>
+              <span class="description">{{ element.ionization_energy }} eV</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Electron Affinity</span>
+              <span class="description">{{ element.electron_affinity }} eV</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="content">
+            <div class="flex flex--row gap--small">
+              <span class="label label--small label--outline">Group</span>
+              <span class="description">{{ element.group_block }}</span>
             </div>
           </div>
         </div>
