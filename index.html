@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Element of the Day - TRMNL Plugin</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Courier New', monospace;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    .element-card {
+      border: 4px solid black;
+      background: white;
+      padding: 20px;
+      text-align: center;
+      width: 200px;
+      margin: 20px auto;
+    }
+    .atomic-number {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .symbol {
+      font-size: 72px;
+      font-weight: bold;
+      line-height: 1;
+    }
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .mass {
+      font-size: 16px;
+    }
+    .details {
+      background: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      margin-top: 20px;
+    }
+    .details h2 {
+      margin-top: 0;
+    }
+    .property {
+      margin: 8px 0;
+    }
+    .property strong {
+      display: inline-block;
+      width: 180px;
+    }
+    .api-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .api-link a {
+      color: #0066cc;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <h1>🧪 Element of the Day</h1>
+  <p style="text-align: center;">A TRMNL plugin for daily periodic table elements</p>
+  
+  <div id="element-display">
+    <div class="element-card">
+      <div class="atomic-number" id="atomic-number">--</div>
+      <div class="symbol" id="symbol">?</div>
+      <div class="name" id="name">Loading...</div>
+      <div class="mass" id="mass">--</div>
+    </div>
+    
+    <div class="details">
+      <h2>Element Properties</h2>
+      <div class="property"><strong>Category:</strong> <span id="category">--</span></div>
+      <div class="property"><strong>Standard State:</strong> <span id="state">--</span></div>
+      <div class="property"><strong>Electron Config:</strong> <span id="electron-config">--</span></div>
+      <div class="property"><strong>Electronegativity:</strong> <span id="electronegativity">--</span></div>
+      <div class="property"><strong>Melting Point:</strong> <span id="melting-point">--</span></div>
+      <div class="property"><strong>Boiling Point:</strong> <span id="boiling-point">--</span></div>
+      <div class="property"><strong>Density:</strong> <span id="density">--</span></div>
+      <div class="property"><strong>Oxidation States:</strong> <span id="oxidation-states">--</span></div>
+      <div class="property"><strong>Year Discovered:</strong> <span id="year-discovered">--</span></div>
+    </div>
+  </div>
+  
+  <div class="api-link">
+    <p>API Endpoint: <a href="api/element-of-the-day.json">api/element-of-the-day.json</a></p>
+  </div>
+  
+  <div class="footer">
+    <p>Made for <a href="https://usetrmnl.com">TRMNL</a> | <a href="https://github.com/hossain-khan/trmnl-elements-plugin">GitHub</a></p>
+  </div>
+  
+  <script>
+    fetch('api/element-of-the-day.json')
+      .then(response => response.json())
+      .then(data => {
+        const el = data.element;
+        document.getElementById('atomic-number').textContent = el.atomic_number;
+        document.getElementById('symbol').textContent = el.symbol;
+        document.getElementById('name').textContent = el.name;
+        document.getElementById('mass').textContent = el.atomic_mass;
+        document.getElementById('category').textContent = el.category;
+        document.getElementById('state').textContent = el.standard_state;
+        document.getElementById('electron-config').textContent = el.electron_configuration;
+        document.getElementById('electronegativity').textContent = el.electronegativity;
+        document.getElementById('melting-point').textContent = el.melting_point;
+        document.getElementById('boiling-point').textContent = el.boiling_point;
+        document.getElementById('density').textContent = el.density !== 'N/A' ? el.density + ' g/cm³' : 'N/A';
+        document.getElementById('oxidation-states').textContent = el.oxidation_states;
+        document.getElementById('year-discovered').textContent = el.year_discovered;
+      })
+      .catch(error => {
+        console.error('Error loading element data:', error);
+        document.getElementById('name').textContent = 'Error loading data';
+      });
+  </script>
+</body>
+</html>
