@@ -96,6 +96,23 @@ https://hossain-khan.github.io/trmnl-elements-plugin/api/element-of-the-day.json
 
 3. Test locally by opening `templates/*.liquid` files
 
+### Testing
+
+Run the unit tests to ensure the element selection logic works correctly:
+
+```bash
+npm test
+```
+
+The test suite verifies:
+- ✅ Day of year calculations (including leap years)
+- ✅ Element index mapping (118-day cycle)
+- ✅ Data formatting and N/A handling
+- ✅ File output generation
+- ✅ Cycle consistency (day 1 = day 119)
+
+Tests are implemented using Node.js `assert` module and can be run without any external dependencies.
+
 ### Data Source
 
 Element data is sourced from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) and stored in `data/PubChemElements_all.json`.

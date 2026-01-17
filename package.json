@@ -1,0 +1,17 @@
+{
+  "name": "trmnl-elements-plugin",
+  "version": "1.0.0",
+  "description": "TRMNL plugin for displaying periodic table elements",
+  "scripts": {
+    "test": "node scripts/update-element-of-the-day.test.js",
+    "update": "node scripts/update-element-of-the-day.js"
+  },
+  "keywords": [
+    "trmnl",
+    "periodic-table",
+    "chemistry",
+    "elements"
+  ],
+  "author": "",
+  "license": "MIT"
+}
