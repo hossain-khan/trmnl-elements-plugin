@@ -1,7 +1,7 @@
 <div class="layout">
-  <div class="flex flex--row gap--small portrait:flex--col">
+  <div class="flex flex--row gap--medium portrait:flex--col p--2 flex--center-y">
     <!-- Element Card -->
-    <div class="outline rounded p--2 bg--white no-shrink min-w--40">
+    <div class="outline rounded p--2 bg--white no-shrink w--40 md:w--44 lg:w--48 min-w--40">
       <!-- Top row: Atomic number (left) and Atomic mass (right) -->
       <div class="flex flex--row flex--between mb--xsmall">
         <div class="value value--small value--tnums">
@@ -24,21 +24,20 @@
         <div class="title title--small mb--xsmall">
           {{ element.name }}
         </div>
-        <div class="label label--inverted">
+        <div class="label label--small label--inverted">
           {{ element.category }}
         </div>
       </div>
     </div>
     
     <!-- Element Details -->
-    <div class="flex flex--col gap--xsmall stretch">
-      <!-- Element name and category header -->
-      <div class="flex flex--row flex--between gap--small mb--xsmall flex--wrap">
-        <div class="title">{{ element.name }}</div>
-        <div class="title title--medium md:title--large" data-value-fit="true" data-value-fit-max-height="80">{{ element.category | upcase }}</div>
+    <div class="flex flex--col gap--xsmall">
+      <!-- Element name header -->
+      <div class="mb--xsmall">
+        <div class="title title--large md:title--xlarge">{{ element.name }}</div>
       </div>
       
-      <div class="flex flex--col gap--xsmall">
+      <div class="grid grid--cols-2 gap--xsmall">
         <div class="item">
           <div class="content">
             <div class="flex flex--row gap--small flex--wrap">
