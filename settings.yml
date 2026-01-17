@@ -1,7 +1,7 @@
 uuid: trmnl-elements-plugin
 name: Element of the Day
 author: Hossain Khan
-author_email: hossain@example.com
+author_email: trmnl@hossain.dev
 homepage: https://github.com/hossain-khan/trmnl-elements-plugin
 description: Display a different element from the Periodic Table each day - learn chemistry one element at a time!
 markup_version: 1

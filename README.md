@@ -24,18 +24,18 @@ A TRMNL plugin that displays a different element from the Periodic Table each da
 2. Search for "**Element of the Day**"
 3. Click **Install**
 4. Configure your preferred **Display Mode**:
-   - **Daily Rotation**: Cycles through all 118 elements based on day of year (default)
-   - **Hourly Random**: Shows a different element each hour for more frequent changes
+   - **Daily Rotation**: Cycles through all 118 elements based on day of year
+   - **Hourly Random**: Shows a different element each hour for more frequent changes (default)
 5. Add to your [Playlist](https://usetrmnl.com/playlists)
 
 ## Layouts
 
 | Layout | Description |
 |--------|-------------|
-| **Full** | Large element tile with complete property details |
-| **Half Horizontal** | Compact horizontal view with essential info |
-| **Half Vertical** | Vertical layout perfect for side-by-side displays |
-| **Quadrant** | Minimal tile showing symbol and name |
+| **Full** | Responsive 1-3 column grid with element card and 6 detailed properties |
+| **Half Horizontal** | Horizontal layout with card and 6 properties in 2x3 grid (includes melting/boiling points) |
+| **Half Vertical** | Vertical layout with card and 4 essential properties (state, density, electron config, discovered) |
+| **Quadrant** | Compact view with card and 2 properties (state, category) - natural card sizing |
 
 ## Element Data
 
@@ -118,8 +118,8 @@ Updates: Every hour on the hour
 Users can configure the display mode through the plugin settings:
 
 - **Display Mode**: Dropdown to choose between:
-  - `Daily Rotation` - Cycles through all 118 elements based on day of year (default)
-  - `Hourly Random` - Shows a different element each hour based on hour identifier
+  - `Daily Rotation` - Cycles through all 118 elements based on day of year
+  - `Hourly Random` - Shows a different element each hour based on hour identifier (default)
 
 The templates automatically adapt based on the user's selection using conditional logic in `shared.liquid`.
 
@@ -229,13 +229,12 @@ Element data is sourced from [PubChem](https://pubchem.ncbi.nlm.nih.gov/) and st
 
 ### GitHub Actions
 
-Three workflows automate the plugin:
+Two active workflows automate the plugin:
 
 - **`pages.yml`** - Deploys to GitHub Pages on push to main
 - **`update-element.yml`** - Updates daily element data at 2 AM UTC (runs daily)
-- **`update-element-hourly.yml`** - Updates hourly element data (runs every hour)
 
-Both element update workflows can be triggered manually via workflow_dispatch.
+The hourly workflow (`update-element-hourly.yml`) is disabled to reduce GitHub Actions usage. Both element update workflows can be triggered manually via workflow_dispatch.
 
 ### Project Structure
 
