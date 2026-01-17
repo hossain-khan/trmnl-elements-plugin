@@ -4,9 +4,11 @@
   cycling through all 118 elements on a 118-day rotation.
 {% endcomment %}
 
-{% comment %} Load all elements data {% endcomment %}
-{% assign data_all = data-all.json %}
-{% assign all_elements = data_all.elements %}
+{% comment %}
+  Load elements array from static data (data-all.json)
+  The 'elements' key is automatically available from the static data configuration
+{% endcomment %}
+{% assign all_elements = elements %}
 
 {% comment %} Calculate day of year (1-366) {% endcomment %}
 {% assign current_date = "now" | date: "%s" %}
