@@ -4,6 +4,10 @@
 
 Learn chemistry one element at a time! Display a different element from the Periodic Table on your TRMNL e-ink device.
 
+> "The elements are the alphabet of nature." – Dmitri Mendeleev
+
+## Install
+
 <a href="https://usetrmnl.com/recipes/226166">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/icon/trmnl-badge-show-it-on-dark.svg">
@@ -12,13 +16,9 @@ Learn chemistry one element at a time! Display a different element from the Peri
   </picture>
 </a>
 
-> "The elements are the alphabet of nature." – Dmitri Mendeleev
+**[→ Install Element of the Day](https://usetrmnl.com/recipes/226166)**
 
-## Install
-
-**[→ Install Element of the Day](https://usetrmnl.com/recipes)**
-
-1. Visit [TRMNL Plugins](https://usetrmnl.com/plugins)
+1. Visit [TRMNL Recipes](https://usetrmnl.com/recipes)
 2. Search for "**Element of the Day**"
 3. Click **Install**
 4. Configure your preferred **Display Mode**:
