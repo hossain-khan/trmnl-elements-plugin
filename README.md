@@ -4,6 +4,14 @@
 
 Learn chemistry one element at a time! Display a different element from the Periodic Table on your TRMNL e-ink device.
 
+<a href="https://usetrmnl.com/recipes/226166">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/icon/trmnl-badge-show-it-on-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/icon/trmnl-badge-show-it-on-light.svg">
+    <img alt="Show it on TRMNL" src="assets/icon/trmnl-badge-show-it-on-dark.svg" height="40">
+  </picture>
+</a>
+
 > "The elements are the alphabet of nature." – Dmitri Mendeleev
 
 ## Install
