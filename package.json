@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "TRMNL plugin for displaying periodic table elements",
   "scripts": {
-    "test": "node scripts/update-element-of-the-day.test.js && node scripts/update-element-of-the-hour.test.js && node scripts/convert-elements-data.test.js",
+    "test": "node scripts/update-element-of-the-day.test.js && node scripts/update-element-of-the-hour.test.js && node scripts/convert-elements-data.test.js && node scripts/test-comprehensive.js",
+    "test:comprehensive": "node scripts/test-comprehensive.js",
     "test:element": "node scripts/update-element-of-the-day.test.js",
     "test:element-hourly": "node scripts/update-element-of-the-hour.test.js",
     "test:convert": "node scripts/convert-elements-data.test.js",
