@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "20",
-    "symbol": "Ca",
-    "name": "Calcium",
-    "atomic_mass": "40.08",
-    "category": "Alkaline earth metal",
+    "atomic_number": "21",
+    "symbol": "Sc",
+    "name": "Scandium",
+    "atomic_mass": "44.95591",
+    "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2",
-    "electronegativity": "1",
-    "melting_point": "1115 K",
-    "boiling_point": "1757 K",
-    "density": "1.54",
-    "oxidation_states": "+2",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-01-19T02:46:29.831Z"
+    "electron_configuration": "[Ar]4s2 3d1",
+    "electronegativity": "1.36",
+    "melting_point": "1814 K",
+    "boiling_point": "3109 K",
+    "density": "2.99",
+    "oxidation_states": "+3",
+    "year_discovered": "1879",
+    "updated_at": "2026-01-20T02:42:29.286Z"
   }
 }
