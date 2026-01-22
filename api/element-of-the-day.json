@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "22",
-    "symbol": "Ti",
-    "name": "Titanium",
-    "atomic_mass": "47.867",
+    "atomic_number": "23",
+    "symbol": "V",
+    "name": "Vanadium",
+    "atomic_mass": "50.9415",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d2",
-    "electronegativity": "1.54",
-    "melting_point": "1941 K",
-    "boiling_point": "3560 K",
-    "density": "4.5",
-    "oxidation_states": "+4, +3, +2",
-    "year_discovered": "1791",
-    "updated_at": "2026-01-21T02:42:03.903Z"
+    "electron_configuration": "[Ar]4s2 3d3",
+    "electronegativity": "1.63",
+    "melting_point": "2183 K",
+    "boiling_point": "3680 K",
+    "density": "6.0",
+    "oxidation_states": "+5, +4, +3, +2",
+    "year_discovered": "1801",
+    "updated_at": "2026-01-22T02:45:30.196Z"
   }
 }
