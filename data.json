@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "23",
-    "symbol": "V",
-    "name": "Vanadium",
-    "atomic_mass": "50.9415",
+    "atomic_number": "24",
+    "symbol": "Cr",
+    "name": "Chromium",
+    "atomic_mass": "51.996",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d3",
-    "electronegativity": "1.63",
-    "melting_point": "2183 K",
-    "boiling_point": "3680 K",
-    "density": "6.0",
-    "oxidation_states": "+5, +4, +3, +2",
-    "year_discovered": "1801",
-    "updated_at": "2026-01-22T02:45:30.196Z"
+    "electron_configuration": "[Ar]3d5 4s1",
+    "electronegativity": "1.66",
+    "melting_point": "2180 K",
+    "boiling_point": "2944 K",
+    "density": "7.15",
+    "oxidation_states": "+6, +3, +2",
+    "year_discovered": "1797",
+    "updated_at": "2026-01-23T02:42:05.348Z"
   }
 }
