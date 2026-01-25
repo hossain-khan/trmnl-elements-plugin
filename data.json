@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "25",
-    "symbol": "Mn",
-    "name": "Manganese",
-    "atomic_mass": "54.93804",
+    "atomic_number": "26",
+    "symbol": "Fe",
+    "name": "Iron",
+    "atomic_mass": "55.84",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d5",
-    "electronegativity": "1.55",
-    "melting_point": "1519 K",
-    "boiling_point": "2334 K",
-    "density": "7.3",
-    "oxidation_states": "+7, +4, +3, +2",
-    "year_discovered": "1774",
-    "updated_at": "2026-01-24T02:38:45.352Z"
+    "electron_configuration": "[Ar]4s2 3d6",
+    "electronegativity": "1.83",
+    "melting_point": "1811 K",
+    "boiling_point": "3134 K",
+    "density": "7.874",
+    "oxidation_states": "+3, +2",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-01-25T02:50:02.829Z"
   }
 }
