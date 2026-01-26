@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "26",
-    "symbol": "Fe",
-    "name": "Iron",
-    "atomic_mass": "55.84",
+    "atomic_number": "27",
+    "symbol": "Co",
+    "name": "Cobalt",
+    "atomic_mass": "58.93319",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d6",
-    "electronegativity": "1.83",
-    "melting_point": "1811 K",
-    "boiling_point": "3134 K",
-    "density": "7.874",
+    "electron_configuration": "[Ar]4s2 3d7",
+    "electronegativity": "1.88",
+    "melting_point": "1768 K",
+    "boiling_point": "3200 K",
+    "density": "8.86",
     "oxidation_states": "+3, +2",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-01-25T02:50:02.829Z"
+    "year_discovered": "1735",
+    "updated_at": "2026-01-26T02:50:28.360Z"
   }
 }
