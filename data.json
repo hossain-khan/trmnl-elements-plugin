@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "28",
-    "symbol": "Ni",
-    "name": "Nickel",
-    "atomic_mass": "58.693",
+    "atomic_number": "29",
+    "symbol": "Cu",
+    "name": "Copper",
+    "atomic_mass": "63.55",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d8",
-    "electronegativity": "1.91",
-    "melting_point": "1728 K",
-    "boiling_point": "3186 K",
-    "density": "8.912",
-    "oxidation_states": "+3, +2",
-    "year_discovered": "1751",
-    "updated_at": "2026-01-27T02:46:30.602Z"
+    "electron_configuration": "[Ar]4s1 3d10",
+    "electronegativity": "1.9",
+    "melting_point": "1357.77 K",
+    "boiling_point": "2835 K",
+    "density": "8.933",
+    "oxidation_states": "+2, +1",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-01-28T02:44:07.605Z"
   }
 }
