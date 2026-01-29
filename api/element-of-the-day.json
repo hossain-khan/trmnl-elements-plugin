@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "29",
-    "symbol": "Cu",
-    "name": "Copper",
-    "atomic_mass": "63.55",
+    "atomic_number": "30",
+    "symbol": "Zn",
+    "name": "Zinc",
+    "atomic_mass": "65.4",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s1 3d10",
-    "electronegativity": "1.9",
-    "melting_point": "1357.77 K",
-    "boiling_point": "2835 K",
-    "density": "8.933",
-    "oxidation_states": "+2, +1",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-01-28T02:44:07.605Z"
+    "electron_configuration": "[Ar]4s2 3d10",
+    "electronegativity": "1.65",
+    "melting_point": "692.68 K",
+    "boiling_point": "1180 K",
+    "density": "7.134",
+    "oxidation_states": "+2",
+    "year_discovered": "1746",
+    "updated_at": "2026-01-29T02:56:36.824Z"
   }
 }
