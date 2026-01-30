@@ -8,7 +8,7 @@
           {{ element.atomic_number }}
         </div>
         <div class="value value--xxsmall value--tnums" data-value-fit="true">
-          {{ element.atomic_mass }}
+          {{ element.atomic_mass | round: 2 }}
         </div>
       </div>
       
