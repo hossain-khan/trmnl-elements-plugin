@@ -212,7 +212,7 @@
       document.getElementById('atomic-number').textContent = el.atomic_number;
       document.getElementById('symbol').textContent = el.symbol;
       document.getElementById('name').textContent = el.name;
-      document.getElementById('mass').textContent = el.atomic_mass;
+      document.getElementById('mass').textContent = parseFloat(el.atomic_mass).toFixed(2);
       document.getElementById('card-category').textContent = el.category;
       document.getElementById('category').textContent = el.category;
       document.getElementById('state').textContent = el.standard_state;
