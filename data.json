@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "30",
-    "symbol": "Zn",
-    "name": "Zinc",
-    "atomic_mass": "65.4",
-    "category": "Transition metal",
+    "atomic_number": "31",
+    "symbol": "Ga",
+    "name": "Gallium",
+    "atomic_mass": "69.723",
+    "category": "Post-transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d10",
-    "electronegativity": "1.65",
-    "melting_point": "692.68 K",
-    "boiling_point": "1180 K",
-    "density": "7.134",
-    "oxidation_states": "+2",
-    "year_discovered": "1746",
-    "updated_at": "2026-01-29T02:56:36.824Z"
+    "electron_configuration": "[Ar]4s2 3d10 4p1",
+    "electronegativity": "1.81",
+    "melting_point": "302.91 K",
+    "boiling_point": "2477 K",
+    "density": "5.91",
+    "oxidation_states": "+3",
+    "year_discovered": "1875",
+    "updated_at": "2026-01-30T02:57:16.539Z"
   }
 }
