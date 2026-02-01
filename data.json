@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "32",
-    "symbol": "Ge",
-    "name": "Germanium",
-    "atomic_mass": "72.63",
+    "atomic_number": "33",
+    "symbol": "As",
+    "name": "Arsenic",
+    "atomic_mass": "74.92159",
     "category": "Metalloid",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d10 4p2",
-    "electronegativity": "2.01",
-    "melting_point": "1211.4 K",
-    "boiling_point": "3106 K",
-    "density": "5.323",
-    "oxidation_states": "+4, +2",
-    "year_discovered": "1886",
-    "updated_at": "2026-01-31T02:53:51.210Z"
+    "electron_configuration": "[Ar]4s2 3d10 4p3",
+    "electronegativity": "2.18",
+    "melting_point": "1090 K",
+    "boiling_point": "887 K",
+    "density": "5.776",
+    "oxidation_states": "+5, +3, -3",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-02-01T03:04:07.811Z"
   }
 }
