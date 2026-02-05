@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "36",
-    "symbol": "Kr",
-    "name": "Krypton",
-    "atomic_mass": "83.80",
-    "category": "Noble gas",
-    "standard_state": "Gas",
-    "electron_configuration": "[Ar]4s2 3d10 4p6",
-    "electronegativity": "3",
-    "melting_point": "115.79 K",
-    "boiling_point": "119.93 K",
-    "density": "0.003733",
-    "oxidation_states": "0",
-    "year_discovered": "1898",
-    "updated_at": "2026-02-04T02:58:08.594Z"
+    "atomic_number": "37",
+    "symbol": "Rb",
+    "name": "Rubidium",
+    "atomic_mass": "85.468",
+    "category": "Alkali metal",
+    "standard_state": "Solid",
+    "electron_configuration": "[Kr]5s1",
+    "electronegativity": "0.82",
+    "melting_point": "312.46 K",
+    "boiling_point": "961 K",
+    "density": "1.53",
+    "oxidation_states": "+1",
+    "year_discovered": "1861",
+    "updated_at": "2026-02-05T02:59:46.632Z"
   }
 }
