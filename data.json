@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "37",
-    "symbol": "Rb",
-    "name": "Rubidium",
-    "atomic_mass": "85.468",
-    "category": "Alkali metal",
+    "atomic_number": "38",
+    "symbol": "Sr",
+    "name": "Strontium",
+    "atomic_mass": "87.62",
+    "category": "Alkaline earth metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s1",
-    "electronegativity": "0.82",
-    "melting_point": "312.46 K",
-    "boiling_point": "961 K",
-    "density": "1.53",
-    "oxidation_states": "+1",
-    "year_discovered": "1861",
-    "updated_at": "2026-02-05T02:59:46.632Z"
+    "electron_configuration": "[Kr]5s2",
+    "electronegativity": "0.95",
+    "melting_point": "1050 K",
+    "boiling_point": "1655 K",
+    "density": "2.64",
+    "oxidation_states": "+2",
+    "year_discovered": "1790",
+    "updated_at": "2026-02-06T02:59:10.553Z"
   }
 }
