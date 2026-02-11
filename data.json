@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "42",
-    "symbol": "Mo",
-    "name": "Molybdenum",
-    "atomic_mass": "95.95",
+    "atomic_number": "43",
+    "symbol": "Tc",
+    "name": "Technetium",
+    "atomic_mass": "96.90636",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s1 4d5",
-    "electronegativity": "2.16",
-    "melting_point": "2896 K",
-    "boiling_point": "4912 K",
-    "density": "10.2",
-    "oxidation_states": "+6",
-    "year_discovered": "1778",
-    "updated_at": "2026-02-10T03:04:16.149Z"
+    "electron_configuration": "[Kr]5s2 4d5",
+    "electronegativity": "1.9",
+    "melting_point": "2430 K",
+    "boiling_point": "4538 K",
+    "density": "11",
+    "oxidation_states": "+7, +6, +4",
+    "year_discovered": "1937",
+    "updated_at": "2026-02-11T03:04:10.288Z"
   }
 }
