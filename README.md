@@ -1,3 +1,5 @@
+[![Installs](https://trmnl-badges.gohk.xyz/badge/installs?recipe=226166)](https://trmnl.com/recipes/226166) [![Forks](https://trmnl-badges.gohk.xyz/badge/forks?recipe=226166)](https://trmnl.com/recipes/226166)
+
 # Element of the Day 🧪
 
 <img src="assets/icon/periodic-table-icon.svg" align="right" alt="Periodic Table Icon" width="120"/>
