@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "48",
-    "symbol": "Cd",
-    "name": "Cadmium",
-    "atomic_mass": "112.41",
-    "category": "Transition metal",
+    "atomic_number": "49",
+    "symbol": "In",
+    "name": "Indium",
+    "atomic_mass": "114.818",
+    "category": "Post-transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2 4d10",
-    "electronegativity": "1.69",
-    "melting_point": "594.22 K",
-    "boiling_point": "1040 K",
-    "density": "8.69",
-    "oxidation_states": "+2",
-    "year_discovered": "1817",
-    "updated_at": "2026-02-16T03:03:21.225Z"
+    "electron_configuration": "[Kr]5s2 4d10 5p1",
+    "electronegativity": "1.78",
+    "melting_point": "429.75 K",
+    "boiling_point": "2345 K",
+    "density": "7.31",
+    "oxidation_states": "+3",
+    "year_discovered": "1863",
+    "updated_at": "2026-02-17T03:00:57.559Z"
   }
 }
