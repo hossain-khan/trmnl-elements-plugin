@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "49",
-    "symbol": "In",
-    "name": "Indium",
-    "atomic_mass": "114.818",
+    "atomic_number": "50",
+    "symbol": "Sn",
+    "name": "Tin",
+    "atomic_mass": "118.71",
     "category": "Post-transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2 4d10 5p1",
-    "electronegativity": "1.78",
-    "melting_point": "429.75 K",
-    "boiling_point": "2345 K",
-    "density": "7.31",
-    "oxidation_states": "+3",
-    "year_discovered": "1863",
-    "updated_at": "2026-02-17T03:00:57.559Z"
+    "electron_configuration": "[Kr]5s2 4d10 5p2",
+    "electronegativity": "1.96",
+    "melting_point": "505.08 K",
+    "boiling_point": "2875 K",
+    "density": "7.287",
+    "oxidation_states": "+4, +2",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-02-18T03:02:19.203Z"
   }
 }
