@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "51",
-    "symbol": "Sb",
-    "name": "Antimony",
-    "atomic_mass": "121.760",
+    "atomic_number": "52",
+    "symbol": "Te",
+    "name": "Tellurium",
+    "atomic_mass": "127.6",
     "category": "Metalloid",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2 4d10 5p3",
-    "electronegativity": "2.05",
-    "melting_point": "903.78 K",
-    "boiling_point": "1860 K",
-    "density": "6.685",
-    "oxidation_states": "+5, +3, -3",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-02-19T03:01:46.904Z"
+    "electron_configuration": "[Kr]5s2 4d10 5p4",
+    "electronegativity": "2.1",
+    "melting_point": "722.66 K",
+    "boiling_point": "1261 K",
+    "density": "6.232",
+    "oxidation_states": "+6, +4, -2",
+    "year_discovered": "1782",
+    "updated_at": "2026-02-20T02:59:35.501Z"
   }
 }
