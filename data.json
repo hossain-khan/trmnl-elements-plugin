@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "52",
-    "symbol": "Te",
-    "name": "Tellurium",
-    "atomic_mass": "127.6",
-    "category": "Metalloid",
+    "atomic_number": "53",
+    "symbol": "I",
+    "name": "Iodine",
+    "atomic_mass": "126.9045",
+    "category": "Halogen",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2 4d10 5p4",
-    "electronegativity": "2.1",
-    "melting_point": "722.66 K",
-    "boiling_point": "1261 K",
-    "density": "6.232",
-    "oxidation_states": "+6, +4, -2",
-    "year_discovered": "1782",
-    "updated_at": "2026-02-20T02:59:35.501Z"
+    "electron_configuration": "[Kr]5s2 4d10 5p5",
+    "electronegativity": "2.66",
+    "melting_point": "386.85 K",
+    "boiling_point": "457.55 K",
+    "density": "4.93",
+    "oxidation_states": "+7, +5, +1, -1",
+    "year_discovered": "1811",
+    "updated_at": "2026-02-21T02:55:10.409Z"
   }
 }
