@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "53",
-    "symbol": "I",
-    "name": "Iodine",
-    "atomic_mass": "126.9045",
-    "category": "Halogen",
-    "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2 4d10 5p5",
-    "electronegativity": "2.66",
-    "melting_point": "386.85 K",
-    "boiling_point": "457.55 K",
-    "density": "4.93",
-    "oxidation_states": "+7, +5, +1, -1",
-    "year_discovered": "1811",
-    "updated_at": "2026-02-21T02:55:10.409Z"
+    "atomic_number": "54",
+    "symbol": "Xe",
+    "name": "Xenon",
+    "atomic_mass": "131.29",
+    "category": "Noble gas",
+    "standard_state": "Gas",
+    "electron_configuration": "[Kr]5s2 4d10 5p6",
+    "electronegativity": "2.6",
+    "melting_point": "161.36 K",
+    "boiling_point": "165.03 K",
+    "density": "0.005887",
+    "oxidation_states": "0",
+    "year_discovered": "1898",
+    "updated_at": "2026-02-22T03:02:16.632Z"
   }
 }
