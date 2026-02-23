@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "54",
-    "symbol": "Xe",
-    "name": "Xenon",
-    "atomic_mass": "131.29",
-    "category": "Noble gas",
-    "standard_state": "Gas",
-    "electron_configuration": "[Kr]5s2 4d10 5p6",
-    "electronegativity": "2.6",
-    "melting_point": "161.36 K",
-    "boiling_point": "165.03 K",
-    "density": "0.005887",
-    "oxidation_states": "0",
-    "year_discovered": "1898",
-    "updated_at": "2026-02-22T03:02:16.632Z"
+    "atomic_number": "55",
+    "symbol": "Cs",
+    "name": "Cesium",
+    "atomic_mass": "132.9054520",
+    "category": "Alkali metal",
+    "standard_state": "Solid",
+    "electron_configuration": "[Xe]6s1",
+    "electronegativity": "0.79",
+    "melting_point": "301.59 K",
+    "boiling_point": "944 K",
+    "density": "1.93",
+    "oxidation_states": "+1",
+    "year_discovered": "1860",
+    "updated_at": "2026-02-23T03:03:06.032Z"
   }
 }
