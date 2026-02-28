@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "59",
-    "symbol": "Pr",
-    "name": "Praseodymium",
-    "atomic_mass": "140.90766",
+    "atomic_number": "60",
+    "symbol": "Nd",
+    "name": "Neodymium",
+    "atomic_mass": "144.24",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f3",
-    "electronegativity": "1.13",
-    "melting_point": "1204 K",
-    "boiling_point": "3793 K",
-    "density": "6.77",
+    "electron_configuration": "[Xe]6s2 4f4",
+    "electronegativity": "1.14",
+    "melting_point": "1294 K",
+    "boiling_point": "3347 K",
+    "density": "7.01",
     "oxidation_states": "+3",
     "year_discovered": "1885",
-    "updated_at": "2026-02-27T02:58:38.128Z"
+    "updated_at": "2026-02-28T02:48:46.755Z"
   }
 }
