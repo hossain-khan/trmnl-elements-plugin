@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "60",
-    "symbol": "Nd",
-    "name": "Neodymium",
-    "atomic_mass": "144.24",
+    "atomic_number": "61",
+    "symbol": "Pm",
+    "name": "Promethium",
+    "atomic_mass": "144.91276",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f4",
-    "electronegativity": "1.14",
-    "melting_point": "1294 K",
-    "boiling_point": "3347 K",
-    "density": "7.01",
+    "electron_configuration": "[Xe]6s2 4f5",
+    "electronegativity": "N/A",
+    "melting_point": "1315 K",
+    "boiling_point": "3273 K",
+    "density": "7.26",
     "oxidation_states": "+3",
-    "year_discovered": "1885",
-    "updated_at": "2026-02-28T02:48:46.755Z"
+    "year_discovered": "1945",
+    "updated_at": "2026-03-01T03:03:52.100Z"
   }
 }
