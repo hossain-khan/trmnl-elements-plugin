@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "61",
-    "symbol": "Pm",
-    "name": "Promethium",
-    "atomic_mass": "144.91276",
+    "atomic_number": "62",
+    "symbol": "Sm",
+    "name": "Samarium",
+    "atomic_mass": "150.4",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f5",
-    "electronegativity": "N/A",
-    "melting_point": "1315 K",
-    "boiling_point": "3273 K",
-    "density": "7.26",
-    "oxidation_states": "+3",
-    "year_discovered": "1945",
-    "updated_at": "2026-03-01T03:03:52.100Z"
+    "electron_configuration": "[Xe]6s2 4f6",
+    "electronegativity": "1.17",
+    "melting_point": "1347 K",
+    "boiling_point": "2067 K",
+    "density": "7.52",
+    "oxidation_states": "+3, +2",
+    "year_discovered": "1879",
+    "updated_at": "2026-03-02T02:59:18.002Z"
   }
 }
