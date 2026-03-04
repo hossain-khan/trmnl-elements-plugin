@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "63",
-    "symbol": "Eu",
-    "name": "Europium",
-    "atomic_mass": "151.964",
+    "atomic_number": "64",
+    "symbol": "Gd",
+    "name": "Gadolinium",
+    "atomic_mass": "157.25",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f7",
-    "electronegativity": "N/A",
-    "melting_point": "1095 K",
-    "boiling_point": "1802 K",
-    "density": "5.24",
-    "oxidation_states": "+3, +2",
-    "year_discovered": "1901",
-    "updated_at": "2026-03-03T03:01:22.957Z"
+    "electron_configuration": "[Xe]6s2 4f7 5d1",
+    "electronegativity": "1.2",
+    "melting_point": "1586 K",
+    "boiling_point": "3546 K",
+    "density": "7.90",
+    "oxidation_states": "+3",
+    "year_discovered": "1880",
+    "updated_at": "2026-03-04T02:56:48.792Z"
   }
 }
