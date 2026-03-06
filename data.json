@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "65",
-    "symbol": "Tb",
-    "name": "Terbium",
-    "atomic_mass": "158.92535",
+    "atomic_number": "66",
+    "symbol": "Dy",
+    "name": "Dysprosium",
+    "atomic_mass": "162.500",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f9",
-    "electronegativity": "N/A",
-    "melting_point": "1629 K",
-    "boiling_point": "3503 K",
-    "density": "8.23",
+    "electron_configuration": "[Xe]6s2 4f10",
+    "electronegativity": "1.22",
+    "melting_point": "1685 K",
+    "boiling_point": "2840 K",
+    "density": "8.55",
     "oxidation_states": "+3",
-    "year_discovered": "1843",
-    "updated_at": "2026-03-05T02:58:43.946Z"
+    "year_discovered": "1886",
+    "updated_at": "2026-03-06T02:58:12.255Z"
   }
 }
