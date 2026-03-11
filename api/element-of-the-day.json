@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "70",
-    "symbol": "Yb",
-    "name": "Ytterbium",
-    "atomic_mass": "173.05",
+    "atomic_number": "71",
+    "symbol": "Lu",
+    "name": "Lutetium",
+    "atomic_mass": "174.9667",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14",
-    "electronegativity": "N/A",
-    "melting_point": "1092 K",
-    "boiling_point": "1469 K",
-    "density": "6.90",
-    "oxidation_states": "+3, +2",
-    "year_discovered": "1878",
-    "updated_at": "2026-03-10T02:56:44.807Z"
+    "electron_configuration": "[Xe]6s2 4f14 5d1",
+    "electronegativity": "1.27",
+    "melting_point": "1936 K",
+    "boiling_point": "3675 K",
+    "density": "9.84",
+    "oxidation_states": "+3",
+    "year_discovered": "1907",
+    "updated_at": "2026-03-11T02:56:22.525Z"
   }
 }
