@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "74",
-    "symbol": "W",
-    "name": "Tungsten",
-    "atomic_mass": "183.84",
+    "atomic_number": "75",
+    "symbol": "Re",
+    "name": "Rhenium",
+    "atomic_mass": "186.207",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d4",
-    "electronegativity": "2.36",
-    "melting_point": "3695 K",
-    "boiling_point": "5828 K",
-    "density": "19.3",
-    "oxidation_states": "+6",
-    "year_discovered": "1783",
-    "updated_at": "2026-03-14T02:56:59.024Z"
+    "electron_configuration": "[Xe]6s2 4f14 5d5",
+    "electronegativity": "1.9",
+    "melting_point": "3459 K",
+    "boiling_point": "5869 K",
+    "density": "20.8",
+    "oxidation_states": "+7, +6, +4",
+    "year_discovered": "1925",
+    "updated_at": "2026-03-15T03:04:09.284Z"
   }
 }
