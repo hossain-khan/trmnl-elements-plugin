@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "78",
-    "symbol": "Pt",
-    "name": "Platinum",
-    "atomic_mass": "195.08",
+    "atomic_number": "79",
+    "symbol": "Au",
+    "name": "Gold",
+    "atomic_mass": "196.96657",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s1 4f14 5d9",
-    "electronegativity": "2.28",
-    "melting_point": "2041.55 K",
-    "boiling_point": "4098 K",
-    "density": "21.46",
-    "oxidation_states": "+4, +2",
-    "year_discovered": "1735",
-    "updated_at": "2026-03-18T03:03:38.162Z"
+    "electron_configuration": "[Xe]6s1 4f14 5d10",
+    "electronegativity": "2.54",
+    "melting_point": "1337.33 K",
+    "boiling_point": "3129 K",
+    "density": "19.282",
+    "oxidation_states": "+3, +1",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-03-19T03:03:37.879Z"
   }
 }
