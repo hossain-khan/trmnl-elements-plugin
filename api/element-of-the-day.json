@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "79",
-    "symbol": "Au",
-    "name": "Gold",
-    "atomic_mass": "196.96657",
+    "atomic_number": "80",
+    "symbol": "Hg",
+    "name": "Mercury",
+    "atomic_mass": "200.59",
     "category": "Transition metal",
-    "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s1 4f14 5d10",
-    "electronegativity": "2.54",
-    "melting_point": "1337.33 K",
-    "boiling_point": "3129 K",
-    "density": "19.282",
-    "oxidation_states": "+3, +1",
+    "standard_state": "Liquid",
+    "electron_configuration": "[Xe]6s2 4f14 5d10",
+    "electronegativity": "2",
+    "melting_point": "234.32 K",
+    "boiling_point": "629.88 K",
+    "density": "13.5336",
+    "oxidation_states": "+2, +1",
     "year_discovered": "Ancient",
-    "updated_at": "2026-03-19T03:03:37.879Z"
+    "updated_at": "2026-03-20T02:59:02.678Z"
   }
 }
