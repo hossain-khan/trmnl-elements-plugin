@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "80",
-    "symbol": "Hg",
-    "name": "Mercury",
-    "atomic_mass": "200.59",
-    "category": "Transition metal",
-    "standard_state": "Liquid",
-    "electron_configuration": "[Xe]6s2 4f14 5d10",
-    "electronegativity": "2",
-    "melting_point": "234.32 K",
-    "boiling_point": "629.88 K",
-    "density": "13.5336",
-    "oxidation_states": "+2, +1",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-03-20T02:59:02.678Z"
+    "atomic_number": "81",
+    "symbol": "Tl",
+    "name": "Thallium",
+    "atomic_mass": "204.383",
+    "category": "Post-transition metal",
+    "standard_state": "Solid",
+    "electron_configuration": "[Xe]6s2 4f14 5d10 6p1",
+    "electronegativity": "1.62",
+    "melting_point": "577 K",
+    "boiling_point": "1746 K",
+    "density": "11.8",
+    "oxidation_states": "+3, +1",
+    "year_discovered": "1861",
+    "updated_at": "2026-03-21T02:54:50.390Z"
   }
 }
