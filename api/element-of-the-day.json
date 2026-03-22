@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "81",
-    "symbol": "Tl",
-    "name": "Thallium",
-    "atomic_mass": "204.383",
+    "atomic_number": "82",
+    "symbol": "Pb",
+    "name": "Lead",
+    "atomic_mass": "207",
     "category": "Post-transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d10 6p1",
-    "electronegativity": "1.62",
-    "melting_point": "577 K",
-    "boiling_point": "1746 K",
-    "density": "11.8",
-    "oxidation_states": "+3, +1",
-    "year_discovered": "1861",
-    "updated_at": "2026-03-21T02:54:50.390Z"
+    "electron_configuration": "[Xe]6s2 4f14 5d10 6p2",
+    "electronegativity": "2.33",
+    "melting_point": "600.61 K",
+    "boiling_point": "2022 K",
+    "density": "11.342",
+    "oxidation_states": "+4, +2",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-03-22T03:03:44.430Z"
   }
 }
