@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "82",
-    "symbol": "Pb",
-    "name": "Lead",
-    "atomic_mass": "207",
+    "atomic_number": "83",
+    "symbol": "Bi",
+    "name": "Bismuth",
+    "atomic_mass": "208.98040",
     "category": "Post-transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d10 6p2",
-    "electronegativity": "2.33",
-    "melting_point": "600.61 K",
-    "boiling_point": "2022 K",
-    "density": "11.342",
-    "oxidation_states": "+4, +2",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-03-22T03:03:44.430Z"
+    "electron_configuration": "[Xe]6s2 4f14 5d10 6p3",
+    "electronegativity": "2.02",
+    "melting_point": "544.55 K",
+    "boiling_point": "1837 K",
+    "density": "9.807",
+    "oxidation_states": "+5, +3",
+    "year_discovered": "1753",
+    "updated_at": "2026-03-23T03:04:25.486Z"
   }
 }
