@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "85",
-    "symbol": "At",
-    "name": "Astatine",
-    "atomic_mass": "209.98715",
-    "category": "Halogen",
-    "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d10 6p5",
-    "electronegativity": "2.2",
-    "melting_point": "575 K",
-    "boiling_point": "N/A",
-    "density": "7",
-    "oxidation_states": "7, 5, 3, 1, -1",
-    "year_discovered": "1940",
-    "updated_at": "2026-03-25T03:02:35.606Z"
+    "atomic_number": "86",
+    "symbol": "Rn",
+    "name": "Radon",
+    "atomic_mass": "222.01758",
+    "category": "Noble gas",
+    "standard_state": "Gas",
+    "electron_configuration": "[Xe]6s2 4f14 5d10 6p6",
+    "electronegativity": "N/A",
+    "melting_point": "202 K",
+    "boiling_point": "211.45 K",
+    "density": "0.00973",
+    "oxidation_states": "0",
+    "year_discovered": "1900",
+    "updated_at": "2026-03-26T03:04:35.622Z"
   }
 }
