@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "86",
-    "symbol": "Rn",
-    "name": "Radon",
-    "atomic_mass": "222.01758",
-    "category": "Noble gas",
-    "standard_state": "Gas",
-    "electron_configuration": "[Xe]6s2 4f14 5d10 6p6",
-    "electronegativity": "N/A",
-    "melting_point": "202 K",
-    "boiling_point": "211.45 K",
-    "density": "0.00973",
-    "oxidation_states": "0",
-    "year_discovered": "1900",
-    "updated_at": "2026-03-26T03:04:35.622Z"
+    "atomic_number": "87",
+    "symbol": "Fr",
+    "name": "Francium",
+    "atomic_mass": "223.01973",
+    "category": "Alkali metal",
+    "standard_state": "Solid",
+    "electron_configuration": "[Rn]7s1",
+    "electronegativity": "0.7",
+    "melting_point": "300 K",
+    "boiling_point": "N/A",
+    "density": "N/A",
+    "oxidation_states": "+1",
+    "year_discovered": "1939",
+    "updated_at": "2026-03-27T03:04:42.622Z"
   }
 }
