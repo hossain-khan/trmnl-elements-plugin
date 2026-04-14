@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "104",
-    "symbol": "Rf",
-    "name": "Rutherfordium",
-    "atomic_mass": "267.122",
+    "atomic_number": "105",
+    "symbol": "Db",
+    "name": "Dubnium",
+    "atomic_mass": "268.126",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Rn]7s2 5f14 6d2",
+    "electron_configuration": "[Rn]7s2 5f14 6d3",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "+4",
-    "year_discovered": "1964",
-    "updated_at": "2026-04-13T03:06:02.060Z"
+    "oxidation_states": "5, 4, 3",
+    "year_discovered": "1967",
+    "updated_at": "2026-04-14T03:05:02.538Z"
   }
 }
