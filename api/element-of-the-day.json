@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "110",
-    "symbol": "Ds",
-    "name": "Darmstadtium",
-    "atomic_mass": "282.166",
+    "atomic_number": "111",
+    "symbol": "Rg",
+    "name": "Roentgenium",
+    "atomic_mass": "282.169",
     "category": "Transition metal",
     "standard_state": "Expected to be a Solid",
-    "electron_configuration": "[Rn]7s2 5f14 6d8 (predicted)",
+    "electron_configuration": "[Rn]7s2 5f14 6d9 (predicted)",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "8, 6, 4, 2, 0",
+    "oxidation_states": "5, 3, 1, -1",
     "year_discovered": "1994",
-    "updated_at": "2026-04-19T03:05:16.582Z"
+    "updated_at": "2026-04-20T03:05:43.904Z"
   }
 }
