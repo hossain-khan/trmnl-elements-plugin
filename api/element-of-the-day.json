@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "112",
-    "symbol": "Cn",
-    "name": "Copernicium",
-    "atomic_mass": "286.179",
-    "category": "Transition metal",
+    "atomic_number": "113",
+    "symbol": "Nh",
+    "name": "Nihonium",
+    "atomic_mass": "286.182",
+    "category": "Post-transition metal",
     "standard_state": "Expected to be a Solid",
-    "electron_configuration": "[Rn]7s2 5f14 6d10 (predicted)",
+    "electron_configuration": "[Rn]5f14 6d10 7s2 7p1 (predicted)",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "2, 1, 0",
-    "year_discovered": "1996",
-    "updated_at": "2026-04-21T03:05:09.750Z"
+    "oxidation_states": "N/A",
+    "year_discovered": "2004",
+    "updated_at": "2026-04-22T03:05:18.378Z"
   }
 }
