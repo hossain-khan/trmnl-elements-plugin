@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "114",
-    "symbol": "Fl",
-    "name": "Flerovium",
-    "atomic_mass": "290.192",
+    "atomic_number": "115",
+    "symbol": "Mc",
+    "name": "Moscovium",
+    "atomic_mass": "290.196",
     "category": "Post-transition metal",
     "standard_state": "Expected to be a Solid",
-    "electron_configuration": "[Rn]7s2 7p2 5f14 6d10 (predicted)",
+    "electron_configuration": "[Rn]7s2 7p3 5f14 6d10 (predicted)",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "6, 4,2, 1, 0",
-    "year_discovered": "1998",
-    "updated_at": "2026-04-23T03:04:59.139Z"
+    "oxidation_states": "3, 1",
+    "year_discovered": "2003",
+    "updated_at": "2026-04-24T03:05:50.240Z"
   }
 }
