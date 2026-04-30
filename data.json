@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "2",
-    "symbol": "He",
-    "name": "Helium",
-    "atomic_mass": "4.00260",
-    "category": "Noble gas",
-    "standard_state": "Gas",
-    "electron_configuration": "1s2",
-    "electronegativity": "N/A",
-    "melting_point": "0.95 K",
-    "boiling_point": "4.22 K",
-    "density": "0.0001785",
-    "oxidation_states": "0",
-    "year_discovered": "1868",
-    "updated_at": "2026-04-29T03:06:32.514Z"
+    "atomic_number": "3",
+    "symbol": "Li",
+    "name": "Lithium",
+    "atomic_mass": "7.0",
+    "category": "Alkali metal",
+    "standard_state": "Solid",
+    "electron_configuration": "[He]2s1",
+    "electronegativity": "0.98",
+    "melting_point": "453.65 K",
+    "boiling_point": "1615 K",
+    "density": "0.534",
+    "oxidation_states": "+1",
+    "year_discovered": "1817",
+    "updated_at": "2026-04-30T03:07:20.615Z"
   }
 }
