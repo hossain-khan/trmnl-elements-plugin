@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "5",
-    "symbol": "B",
-    "name": "Boron",
-    "atomic_mass": "10.81",
-    "category": "Metalloid",
+    "atomic_number": "6",
+    "symbol": "C",
+    "name": "Carbon",
+    "atomic_mass": "12.011",
+    "category": "Nonmetal",
     "standard_state": "Solid",
-    "electron_configuration": "[He]2s2 2p1",
-    "electronegativity": "2.04",
-    "melting_point": "2348 K",
-    "boiling_point": "4273 K",
-    "density": "2.37",
-    "oxidation_states": "+3",
-    "year_discovered": "1808",
-    "updated_at": "2026-05-02T03:05:29.031Z"
+    "electron_configuration": "[He]2s2 2p2",
+    "electronegativity": "2.55",
+    "melting_point": "3823 K",
+    "boiling_point": "4098 K",
+    "density": "2.2670",
+    "oxidation_states": "+4, +2, -4",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-05-03T03:06:57.494Z"
   }
 }
