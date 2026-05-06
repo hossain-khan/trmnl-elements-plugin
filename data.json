@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "8",
-    "symbol": "O",
-    "name": "Oxygen",
-    "atomic_mass": "15.999",
-    "category": "Nonmetal",
+    "atomic_number": "9",
+    "symbol": "F",
+    "name": "Fluorine",
+    "atomic_mass": "18.99840316",
+    "category": "Halogen",
     "standard_state": "Gas",
-    "electron_configuration": "[He]2s2 2p4",
-    "electronegativity": "3.44",
-    "melting_point": "54.36 K",
-    "boiling_point": "90.2 K",
-    "density": "0.001429",
-    "oxidation_states": "-2",
-    "year_discovered": "1774",
-    "updated_at": "2026-05-05T03:06:04.313Z"
+    "electron_configuration": "[He]2s2 2p5",
+    "electronegativity": "3.98",
+    "melting_point": "53.53 K",
+    "boiling_point": "85.03 K",
+    "density": "0.001696",
+    "oxidation_states": "-1",
+    "year_discovered": "1670",
+    "updated_at": "2026-05-06T03:06:45.288Z"
   }
 }
