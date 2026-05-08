@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "10",
-    "symbol": "Ne",
-    "name": "Neon",
-    "atomic_mass": "20.180",
-    "category": "Noble gas",
-    "standard_state": "Gas",
-    "electron_configuration": "[He]2s2 2p6",
-    "electronegativity": "N/A",
-    "melting_point": "24.56 K",
-    "boiling_point": "27.07 K",
-    "density": "0.0008999",
-    "oxidation_states": "0",
-    "year_discovered": "1898",
-    "updated_at": "2026-05-07T03:07:26.808Z"
+    "atomic_number": "11",
+    "symbol": "Na",
+    "name": "Sodium",
+    "atomic_mass": "22.9897693",
+    "category": "Alkali metal",
+    "standard_state": "Solid",
+    "electron_configuration": "[Ne]3s1",
+    "electronegativity": "0.93",
+    "melting_point": "370.95 K",
+    "boiling_point": "1156 K",
+    "density": "0.97",
+    "oxidation_states": "+1",
+    "year_discovered": "1807",
+    "updated_at": "2026-05-08T03:05:30.554Z"
   }
 }
