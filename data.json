@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "12",
-    "symbol": "Mg",
-    "name": "Magnesium",
-    "atomic_mass": "24.305",
-    "category": "Alkaline earth metal",
+    "atomic_number": "13",
+    "symbol": "Al",
+    "name": "Aluminum",
+    "atomic_mass": "26.981538",
+    "category": "Post-transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ne]3s2",
-    "electronegativity": "1.31",
-    "melting_point": "923 K",
-    "boiling_point": "1363 K",
-    "density": "1.74",
-    "oxidation_states": "+2",
-    "year_discovered": "1808",
-    "updated_at": "2026-05-09T03:06:27.871Z"
+    "electron_configuration": "[Ne]3s2 3p1",
+    "electronegativity": "1.61",
+    "melting_point": "933.437 K",
+    "boiling_point": "2792 K",
+    "density": "2.70",
+    "oxidation_states": "+3",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-05-10T03:06:56.078Z"
   }
 }
