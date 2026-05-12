@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "14",
-    "symbol": "Si",
-    "name": "Silicon",
-    "atomic_mass": "28.085",
-    "category": "Metalloid",
+    "atomic_number": "15",
+    "symbol": "P",
+    "name": "Phosphorus",
+    "atomic_mass": "30.97376200",
+    "category": "Nonmetal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ne]3s2 3p2",
-    "electronegativity": "1.9",
-    "melting_point": "1687 K",
-    "boiling_point": "3538 K",
-    "density": "2.3296",
-    "oxidation_states": "+4, +2, -4",
-    "year_discovered": "1854",
-    "updated_at": "2026-05-11T03:08:40.429Z"
+    "electron_configuration": "[Ne]3s2 3p3",
+    "electronegativity": "2.19",
+    "melting_point": "317.3 K",
+    "boiling_point": "553.65 K",
+    "density": "1.82",
+    "oxidation_states": "+5, +3, -3",
+    "year_discovered": "1669",
+    "updated_at": "2026-05-12T03:07:04.737Z"
   }
 }
