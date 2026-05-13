@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "15",
-    "symbol": "P",
-    "name": "Phosphorus",
-    "atomic_mass": "30.97376200",
+    "atomic_number": "16",
+    "symbol": "S",
+    "name": "Sulfur",
+    "atomic_mass": "32.07",
     "category": "Nonmetal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ne]3s2 3p3",
-    "electronegativity": "2.19",
-    "melting_point": "317.3 K",
-    "boiling_point": "553.65 K",
-    "density": "1.82",
-    "oxidation_states": "+5, +3, -3",
-    "year_discovered": "1669",
-    "updated_at": "2026-05-12T03:07:04.737Z"
+    "electron_configuration": "[Ne]3s2 3p4",
+    "electronegativity": "2.58",
+    "melting_point": "388.36 K",
+    "boiling_point": "717.75 K",
+    "density": "2.067",
+    "oxidation_states": "+6, +4, -2",
+    "year_discovered": "Ancient",
+    "updated_at": "2026-05-13T03:07:42.665Z"
   }
 }
