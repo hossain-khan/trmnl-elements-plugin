@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "17",
-    "symbol": "Cl",
-    "name": "Chlorine",
-    "atomic_mass": "35.45",
-    "category": "Halogen",
+    "atomic_number": "18",
+    "symbol": "Ar",
+    "name": "Argon",
+    "atomic_mass": "39.9",
+    "category": "Noble gas",
     "standard_state": "Gas",
-    "electron_configuration": "[Ne]3s2 3p5",
-    "electronegativity": "3.16",
-    "melting_point": "171.65 K",
-    "boiling_point": "239.11 K",
-    "density": "0.003214",
-    "oxidation_states": "+7, +5, +1, -1",
-    "year_discovered": "1774",
-    "updated_at": "2026-05-14T03:07:07.183Z"
+    "electron_configuration": "[Ne]3s2 3p6",
+    "electronegativity": "N/A",
+    "melting_point": "83.8 K",
+    "boiling_point": "87.3 K",
+    "density": "0.0017837",
+    "oxidation_states": "0",
+    "year_discovered": "1894",
+    "updated_at": "2026-05-15T03:07:46.678Z"
   }
 }
