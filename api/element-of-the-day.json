@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "33",
-    "symbol": "As",
-    "name": "Arsenic",
-    "atomic_mass": "74.92159",
-    "category": "Metalloid",
+    "atomic_number": "34",
+    "symbol": "Se",
+    "name": "Selenium",
+    "atomic_mass": "78.97",
+    "category": "Nonmetal",
     "standard_state": "Solid",
-    "electron_configuration": "[Ar]4s2 3d10 4p3",
-    "electronegativity": "2.18",
-    "melting_point": "1090 K",
-    "boiling_point": "887 K",
-    "density": "5.776",
-    "oxidation_states": "+5, +3, -3",
-    "year_discovered": "Ancient",
-    "updated_at": "2026-05-30T03:06:55.619Z"
+    "electron_configuration": "[Ar]4s2 3d10 4p4",
+    "electronegativity": "2.55",
+    "melting_point": "493.65 K",
+    "boiling_point": "958 K",
+    "density": "4.809",
+    "oxidation_states": "+6, +4, -2",
+    "year_discovered": "1817",
+    "updated_at": "2026-05-31T03:09:00.347Z"
   }
 }
