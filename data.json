@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "35",
-    "symbol": "Br",
-    "name": "Bromine",
-    "atomic_mass": "79.90",
-    "category": "Halogen",
-    "standard_state": "Liquid",
-    "electron_configuration": "[Ar]4s2 3d10 4p5",
-    "electronegativity": "2.96",
-    "melting_point": "265.95 K",
-    "boiling_point": "331.95 K",
-    "density": "3.11",
-    "oxidation_states": "+5, +1, -1",
-    "year_discovered": "1826",
-    "updated_at": "2026-06-01T03:10:21.173Z"
+    "atomic_number": "36",
+    "symbol": "Kr",
+    "name": "Krypton",
+    "atomic_mass": "83.80",
+    "category": "Noble gas",
+    "standard_state": "Gas",
+    "electron_configuration": "[Ar]4s2 3d10 4p6",
+    "electronegativity": "3",
+    "melting_point": "115.79 K",
+    "boiling_point": "119.93 K",
+    "density": "0.003733",
+    "oxidation_states": "0",
+    "year_discovered": "1898",
+    "updated_at": "2026-06-02T03:10:31.609Z"
   }
 }
