@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "38",
-    "symbol": "Sr",
-    "name": "Strontium",
-    "atomic_mass": "87.62",
-    "category": "Alkaline earth metal",
+    "atomic_number": "39",
+    "symbol": "Y",
+    "name": "Yttrium",
+    "atomic_mass": "88.90584",
+    "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2",
-    "electronegativity": "0.95",
-    "melting_point": "1050 K",
-    "boiling_point": "1655 K",
-    "density": "2.64",
-    "oxidation_states": "+2",
-    "year_discovered": "1790",
-    "updated_at": "2026-06-04T03:10:05.172Z"
+    "electron_configuration": "[Kr]5s2 4d1",
+    "electronegativity": "1.22",
+    "melting_point": "1795 K",
+    "boiling_point": "3618 K",
+    "density": "4.47",
+    "oxidation_states": "+3",
+    "year_discovered": "1794",
+    "updated_at": "2026-06-05T03:09:02.615Z"
   }
 }
