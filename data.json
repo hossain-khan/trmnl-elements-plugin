@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "39",
-    "symbol": "Y",
-    "name": "Yttrium",
-    "atomic_mass": "88.90584",
+    "atomic_number": "40",
+    "symbol": "Zr",
+    "name": "Zirconium",
+    "atomic_mass": "91.22",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s2 4d1",
-    "electronegativity": "1.22",
-    "melting_point": "1795 K",
-    "boiling_point": "3618 K",
-    "density": "4.47",
-    "oxidation_states": "+3",
-    "year_discovered": "1794",
-    "updated_at": "2026-06-05T03:09:02.615Z"
+    "electron_configuration": "[Kr]5s2 4d2",
+    "electronegativity": "1.33",
+    "melting_point": "2128 K",
+    "boiling_point": "4682 K",
+    "density": "6.52",
+    "oxidation_states": "+4",
+    "year_discovered": "1789",
+    "updated_at": "2026-06-06T03:07:01.003Z"
   }
 }
