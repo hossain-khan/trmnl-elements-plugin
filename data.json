@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "44",
-    "symbol": "Ru",
-    "name": "Ruthenium",
-    "atomic_mass": "101.1",
+    "atomic_number": "45",
+    "symbol": "Rh",
+    "name": "Rhodium",
+    "atomic_mass": "102.9055",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Kr]5s1 4d7",
-    "electronegativity": "2.2",
-    "melting_point": "2607 K",
-    "boiling_point": "4423 K",
-    "density": "12.1",
+    "electron_configuration": "[Kr]5s1 4d8",
+    "electronegativity": "2.28",
+    "melting_point": "2237 K",
+    "boiling_point": "3968 K",
+    "density": "12.4",
     "oxidation_states": "+3",
-    "year_discovered": "1827",
-    "updated_at": "2026-06-10T03:08:20.378Z"
+    "year_discovered": "1803",
+    "updated_at": "2026-06-11T03:07:59.135Z"
   }
 }
