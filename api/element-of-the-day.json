@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "55",
-    "symbol": "Cs",
-    "name": "Cesium",
-    "atomic_mass": "132.9054520",
-    "category": "Alkali metal",
+    "atomic_number": "56",
+    "symbol": "Ba",
+    "name": "Barium",
+    "atomic_mass": "137.33",
+    "category": "Alkaline earth metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s1",
-    "electronegativity": "0.79",
-    "melting_point": "301.59 K",
-    "boiling_point": "944 K",
-    "density": "1.93",
-    "oxidation_states": "+1",
-    "year_discovered": "1860",
-    "updated_at": "2026-06-21T03:10:09.904Z"
+    "electron_configuration": "[Xe]6s2",
+    "electronegativity": "0.89",
+    "melting_point": "1000 K",
+    "boiling_point": "2170 K",
+    "density": "3.62",
+    "oxidation_states": "+2",
+    "year_discovered": "1808",
+    "updated_at": "2026-06-22T03:10:42.658Z"
   }
 }
