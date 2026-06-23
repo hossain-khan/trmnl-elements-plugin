@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "56",
-    "symbol": "Ba",
-    "name": "Barium",
-    "atomic_mass": "137.33",
-    "category": "Alkaline earth metal",
+    "atomic_number": "57",
+    "symbol": "La",
+    "name": "Lanthanum",
+    "atomic_mass": "138.9055",
+    "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2",
-    "electronegativity": "0.89",
-    "melting_point": "1000 K",
-    "boiling_point": "2170 K",
-    "density": "3.62",
-    "oxidation_states": "+2",
-    "year_discovered": "1808",
-    "updated_at": "2026-06-22T03:10:42.658Z"
+    "electron_configuration": "[Xe]6s2 5d1",
+    "electronegativity": "1.1",
+    "melting_point": "1191 K",
+    "boiling_point": "3737 K",
+    "density": "6.15",
+    "oxidation_states": "+3",
+    "year_discovered": "1839",
+    "updated_at": "2026-06-23T03:07:34.557Z"
   }
 }
