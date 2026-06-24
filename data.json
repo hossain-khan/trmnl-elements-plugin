@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "57",
-    "symbol": "La",
-    "name": "Lanthanum",
-    "atomic_mass": "138.9055",
+    "atomic_number": "58",
+    "symbol": "Ce",
+    "name": "Cerium",
+    "atomic_mass": "140.116",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 5d1",
-    "electronegativity": "1.1",
-    "melting_point": "1191 K",
-    "boiling_point": "3737 K",
-    "density": "6.15",
-    "oxidation_states": "+3",
-    "year_discovered": "1839",
-    "updated_at": "2026-06-23T03:07:34.557Z"
+    "electron_configuration": "[Xe]6s2 4f1 5d1",
+    "electronegativity": "1.12",
+    "melting_point": "1071 K",
+    "boiling_point": "3697 K",
+    "density": "6.770",
+    "oxidation_states": "+4, +3",
+    "year_discovered": "1803",
+    "updated_at": "2026-06-24T03:07:48.575Z"
   }
 }
