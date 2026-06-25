@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "58",
-    "symbol": "Ce",
-    "name": "Cerium",
-    "atomic_mass": "140.116",
+    "atomic_number": "59",
+    "symbol": "Pr",
+    "name": "Praseodymium",
+    "atomic_mass": "140.90766",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f1 5d1",
-    "electronegativity": "1.12",
-    "melting_point": "1071 K",
-    "boiling_point": "3697 K",
-    "density": "6.770",
-    "oxidation_states": "+4, +3",
-    "year_discovered": "1803",
-    "updated_at": "2026-06-24T03:07:48.575Z"
+    "electron_configuration": "[Xe]6s2 4f3",
+    "electronegativity": "1.13",
+    "melting_point": "1204 K",
+    "boiling_point": "3793 K",
+    "density": "6.77",
+    "oxidation_states": "+3",
+    "year_discovered": "1885",
+    "updated_at": "2026-06-25T03:07:36.453Z"
   }
 }
