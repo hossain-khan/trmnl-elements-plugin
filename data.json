@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "64",
-    "symbol": "Gd",
-    "name": "Gadolinium",
-    "atomic_mass": "157.25",
+    "atomic_number": "65",
+    "symbol": "Tb",
+    "name": "Terbium",
+    "atomic_mass": "158.92535",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f7 5d1",
-    "electronegativity": "1.2",
-    "melting_point": "1586 K",
-    "boiling_point": "3546 K",
-    "density": "7.90",
+    "electron_configuration": "[Xe]6s2 4f9",
+    "electronegativity": "N/A",
+    "melting_point": "1629 K",
+    "boiling_point": "3503 K",
+    "density": "8.23",
     "oxidation_states": "+3",
-    "year_discovered": "1880",
-    "updated_at": "2026-06-30T03:07:42.741Z"
+    "year_discovered": "1843",
+    "updated_at": "2026-07-01T03:08:52.406Z"
   }
 }
