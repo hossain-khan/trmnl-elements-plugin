@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "66",
-    "symbol": "Dy",
-    "name": "Dysprosium",
-    "atomic_mass": "162.500",
+    "atomic_number": "67",
+    "symbol": "Ho",
+    "name": "Holmium",
+    "atomic_mass": "164.93033",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f10",
-    "electronegativity": "1.22",
-    "melting_point": "1685 K",
-    "boiling_point": "2840 K",
-    "density": "8.55",
+    "electron_configuration": "[Xe]6s2 4f11",
+    "electronegativity": "1.23",
+    "melting_point": "1747 K",
+    "boiling_point": "2973 K",
+    "density": "8.80",
     "oxidation_states": "+3",
-    "year_discovered": "1886",
-    "updated_at": "2026-07-02T03:06:34.325Z"
+    "year_discovered": "1878",
+    "updated_at": "2026-07-03T03:04:50.271Z"
   }
 }
