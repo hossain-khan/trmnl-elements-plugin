@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "68",
-    "symbol": "Er",
-    "name": "Erbium",
-    "atomic_mass": "167.26",
+    "atomic_number": "69",
+    "symbol": "Tm",
+    "name": "Thulium",
+    "atomic_mass": "168.93422",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f12",
-    "electronegativity": "1.24",
-    "melting_point": "1802 K",
-    "boiling_point": "3141 K",
-    "density": "9.07",
+    "electron_configuration": "[Xe]6s2 4f13",
+    "electronegativity": "1.25",
+    "melting_point": "1818 K",
+    "boiling_point": "2223 K",
+    "density": "9.32",
     "oxidation_states": "+3",
-    "year_discovered": "1843",
-    "updated_at": "2026-07-04T03:04:32.617Z"
+    "year_discovered": "1879",
+    "updated_at": "2026-07-05T03:05:52.194Z"
   }
 }
