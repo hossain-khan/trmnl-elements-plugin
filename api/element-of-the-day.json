@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "69",
-    "symbol": "Tm",
-    "name": "Thulium",
-    "atomic_mass": "168.93422",
+    "atomic_number": "70",
+    "symbol": "Yb",
+    "name": "Ytterbium",
+    "atomic_mass": "173.05",
     "category": "Lanthanide",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f13",
-    "electronegativity": "1.25",
-    "melting_point": "1818 K",
-    "boiling_point": "2223 K",
-    "density": "9.32",
-    "oxidation_states": "+3",
-    "year_discovered": "1879",
-    "updated_at": "2026-07-05T03:05:52.194Z"
+    "electron_configuration": "[Xe]6s2 4f14",
+    "electronegativity": "N/A",
+    "melting_point": "1092 K",
+    "boiling_point": "1469 K",
+    "density": "6.90",
+    "oxidation_states": "+3, +2",
+    "year_discovered": "1878",
+    "updated_at": "2026-07-06T03:06:49.360Z"
   }
 }
