@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "71",
-    "symbol": "Lu",
-    "name": "Lutetium",
-    "atomic_mass": "174.9667",
-    "category": "Lanthanide",
+    "atomic_number": "72",
+    "symbol": "Hf",
+    "name": "Hafnium",
+    "atomic_mass": "178.49",
+    "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d1",
-    "electronegativity": "1.27",
-    "melting_point": "1936 K",
-    "boiling_point": "3675 K",
-    "density": "9.84",
-    "oxidation_states": "+3",
-    "year_discovered": "1907",
-    "updated_at": "2026-07-07T03:05:48.610Z"
+    "electron_configuration": "[Xe]6s2 4f14 5d2",
+    "electronegativity": "1.3",
+    "melting_point": "2506 K",
+    "boiling_point": "4876 K",
+    "density": "13.3",
+    "oxidation_states": "+4",
+    "year_discovered": "1923",
+    "updated_at": "2026-07-08T03:03:48.061Z"
   }
 }
