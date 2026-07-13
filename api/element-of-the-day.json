@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "76",
-    "symbol": "Os",
-    "name": "Osmium",
-    "atomic_mass": "190.2",
+    "atomic_number": "77",
+    "symbol": "Ir",
+    "name": "Iridium",
+    "atomic_mass": "192.22",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d6",
+    "electron_configuration": "[Xe]6s2 4f14 5d7",
     "electronegativity": "2.2",
-    "melting_point": "3306 K",
-    "boiling_point": "5285 K",
-    "density": "22.57",
+    "melting_point": "2719 K",
+    "boiling_point": "4701 K",
+    "density": "22.42",
     "oxidation_states": "+4, +3",
     "year_discovered": "1803",
-    "updated_at": "2026-07-12T03:03:56.466Z"
+    "updated_at": "2026-07-13T03:04:34.325Z"
   }
 }
