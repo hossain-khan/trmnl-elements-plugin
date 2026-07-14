@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "77",
-    "symbol": "Ir",
-    "name": "Iridium",
-    "atomic_mass": "192.22",
+    "atomic_number": "78",
+    "symbol": "Pt",
+    "name": "Platinum",
+    "atomic_mass": "195.08",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d7",
-    "electronegativity": "2.2",
-    "melting_point": "2719 K",
-    "boiling_point": "4701 K",
-    "density": "22.42",
-    "oxidation_states": "+4, +3",
-    "year_discovered": "1803",
-    "updated_at": "2026-07-13T03:04:34.325Z"
+    "electron_configuration": "[Xe]6s1 4f14 5d9",
+    "electronegativity": "2.28",
+    "melting_point": "2041.55 K",
+    "boiling_point": "4098 K",
+    "density": "21.46",
+    "oxidation_states": "+4, +2",
+    "year_discovered": "1735",
+    "updated_at": "2026-07-14T03:02:44.225Z"
   }
 }
