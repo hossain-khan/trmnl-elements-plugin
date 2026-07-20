@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "83",
-    "symbol": "Bi",
-    "name": "Bismuth",
-    "atomic_mass": "208.98040",
-    "category": "Post-transition metal",
+    "atomic_number": "84",
+    "symbol": "Po",
+    "name": "Polonium",
+    "atomic_mass": "208.98243",
+    "category": "Metalloid",
     "standard_state": "Solid",
-    "electron_configuration": "[Xe]6s2 4f14 5d10 6p3",
-    "electronegativity": "2.02",
-    "melting_point": "544.55 K",
-    "boiling_point": "1837 K",
-    "density": "9.807",
-    "oxidation_states": "+5, +3",
-    "year_discovered": "1753",
-    "updated_at": "2026-07-19T03:04:01.803Z"
+    "electron_configuration": "[Xe]6s2 4f14 5d10 6p4",
+    "electronegativity": "2",
+    "melting_point": "527 K",
+    "boiling_point": "1235 K",
+    "density": "9.32",
+    "oxidation_states": "+4, +2",
+    "year_discovered": "1898",
+    "updated_at": "2026-07-20T03:33:16.014Z"
   }
 }
