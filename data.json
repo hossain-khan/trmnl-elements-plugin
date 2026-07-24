@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "87",
-    "symbol": "Fr",
-    "name": "Francium",
-    "atomic_mass": "223.01973",
-    "category": "Alkali metal",
+    "atomic_number": "88",
+    "symbol": "Ra",
+    "name": "Radium",
+    "atomic_mass": "226.02541",
+    "category": "Alkaline earth metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Rn]7s1",
-    "electronegativity": "0.7",
-    "melting_point": "300 K",
-    "boiling_point": "N/A",
-    "density": "N/A",
-    "oxidation_states": "+1",
-    "year_discovered": "1939",
-    "updated_at": "2026-07-23T03:03:38.569Z"
+    "electron_configuration": "[Rn]7s2",
+    "electronegativity": "0.9",
+    "melting_point": "973 K",
+    "boiling_point": "1413 K",
+    "density": "5",
+    "oxidation_states": "+2",
+    "year_discovered": "1898",
+    "updated_at": "2026-07-24T03:03:09.470Z"
   }
 }
