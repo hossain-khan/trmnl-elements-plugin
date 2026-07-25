@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "88",
-    "symbol": "Ra",
-    "name": "Radium",
-    "atomic_mass": "226.02541",
-    "category": "Alkaline earth metal",
+    "atomic_number": "89",
+    "symbol": "Ac",
+    "name": "Actinium",
+    "atomic_mass": "227.02775",
+    "category": "Actinide",
     "standard_state": "Solid",
-    "electron_configuration": "[Rn]7s2",
-    "electronegativity": "0.9",
-    "melting_point": "973 K",
-    "boiling_point": "1413 K",
-    "density": "5",
-    "oxidation_states": "+2",
-    "year_discovered": "1898",
-    "updated_at": "2026-07-24T03:03:09.470Z"
+    "electron_configuration": "[Rn]7s2 6d1",
+    "electronegativity": "1.1",
+    "melting_point": "1324 K",
+    "boiling_point": "3471 K",
+    "density": "10.07",
+    "oxidation_states": "+3",
+    "year_discovered": "1899",
+    "updated_at": "2026-07-25T03:02:55.381Z"
   }
 }
