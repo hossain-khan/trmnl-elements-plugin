@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "93",
-    "symbol": "Np",
-    "name": "Neptunium",
-    "atomic_mass": "237.048172",
+    "atomic_number": "94",
+    "symbol": "Pu",
+    "name": "Plutonium",
+    "atomic_mass": "244.06420",
     "category": "Actinide",
     "standard_state": "Solid",
-    "electron_configuration": "[Rn]7s2 5f4 6d1",
-    "electronegativity": "1.36",
-    "melting_point": "917 K",
-    "boiling_point": "4175 K",
-    "density": "20.25",
+    "electron_configuration": "[Rn]7s2 5f6",
+    "electronegativity": "1.28",
+    "melting_point": "913 K",
+    "boiling_point": "3501 K",
+    "density": "19.84",
     "oxidation_states": "+6, +5, +4, +3",
     "year_discovered": "1940",
-    "updated_at": "2026-07-29T03:02:46.827Z"
+    "updated_at": "2026-07-30T03:03:12.491Z"
   }
 }
