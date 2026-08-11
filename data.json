@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "105",
-    "symbol": "Db",
-    "name": "Dubnium",
-    "atomic_mass": "268.126",
+    "atomic_number": "106",
+    "symbol": "Sg",
+    "name": "Seaborgium",
+    "atomic_mass": "269.128",
     "category": "Transition metal",
     "standard_state": "Solid",
-    "electron_configuration": "[Rn]7s2 5f14 6d3",
+    "electron_configuration": "[Rn]7s2 5f14 6d4",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "5, 4, 3",
-    "year_discovered": "1967",
-    "updated_at": "2026-08-10T02:46:18.230Z"
+    "oxidation_states": "6, 5, 4, 3, 0",
+    "year_discovered": "1974",
+    "updated_at": "2026-08-11T02:42:33.085Z"
   }
 }
