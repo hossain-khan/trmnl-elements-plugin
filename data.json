@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "115",
-    "symbol": "Mc",
-    "name": "Moscovium",
-    "atomic_mass": "290.196",
+    "atomic_number": "116",
+    "symbol": "Lv",
+    "name": "Livermorium",
+    "atomic_mass": "293.205",
     "category": "Post-transition metal",
     "standard_state": "Expected to be a Solid",
-    "electron_configuration": "[Rn]7s2 7p3 5f14 6d10 (predicted)",
+    "electron_configuration": "[Rn]7s2 7p4 5f14 6d10 (predicted)",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "3, 1",
-    "year_discovered": "2003",
-    "updated_at": "2026-08-20T02:25:00.434Z"
+    "oxidation_states": "+4, +2, -2",
+    "year_discovered": "2000",
+    "updated_at": "2026-08-21T02:29:05.423Z"
   }
 }
