@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "117",
-    "symbol": "Ts",
-    "name": "Tennessine",
-    "atomic_mass": "294.211",
-    "category": "Halogen",
-    "standard_state": "Expected to be a Solid",
-    "electron_configuration": "[Rn]7s2 7p5 5f14 6d10 (predicted)",
+    "atomic_number": "118",
+    "symbol": "Og",
+    "name": "Oganesson",
+    "atomic_mass": "295.216",
+    "category": "Noble gas",
+    "standard_state": "Expected to be a Gas",
+    "electron_configuration": "[Rn]7s2 7p6 5f14 6d10 (predicted)",
     "electronegativity": "N/A",
     "melting_point": "N/A",
     "boiling_point": "N/A",
     "density": "N/A",
-    "oxidation_states": "+5, +3, +1, -1",
-    "year_discovered": "2010",
-    "updated_at": "2026-08-22T02:23:34.777Z"
+    "oxidation_states": "+6, +4, +2, +1, 0, -1",
+    "year_discovered": "2006",
+    "updated_at": "2026-08-23T02:29:11.681Z"
   }
 }
