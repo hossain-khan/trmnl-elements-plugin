@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "118",
-    "symbol": "Og",
-    "name": "Oganesson",
-    "atomic_mass": "295.216",
-    "category": "Noble gas",
-    "standard_state": "Expected to be a Gas",
-    "electron_configuration": "[Rn]7s2 7p6 5f14 6d10 (predicted)",
-    "electronegativity": "N/A",
-    "melting_point": "N/A",
-    "boiling_point": "N/A",
-    "density": "N/A",
-    "oxidation_states": "+6, +4, +2, +1, 0, -1",
-    "year_discovered": "2006",
-    "updated_at": "2026-08-23T02:29:11.681Z"
+    "atomic_number": "1",
+    "symbol": "H",
+    "name": "Hydrogen",
+    "atomic_mass": "1.0080",
+    "category": "Nonmetal",
+    "standard_state": "Gas",
+    "electron_configuration": "1s1",
+    "electronegativity": "2.2",
+    "melting_point": "13.81 K",
+    "boiling_point": "20.28 K",
+    "density": "0.00008988",
+    "oxidation_states": "+1, -1",
+    "year_discovered": "1766",
+    "updated_at": "2026-08-24T02:28:59.620Z"
   }
 }
