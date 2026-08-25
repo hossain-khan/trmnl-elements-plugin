@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "1",
-    "symbol": "H",
-    "name": "Hydrogen",
-    "atomic_mass": "1.0080",
-    "category": "Nonmetal",
+    "atomic_number": "2",
+    "symbol": "He",
+    "name": "Helium",
+    "atomic_mass": "4.00260",
+    "category": "Noble gas",
     "standard_state": "Gas",
-    "electron_configuration": "1s1",
-    "electronegativity": "2.2",
-    "melting_point": "13.81 K",
-    "boiling_point": "20.28 K",
-    "density": "0.00008988",
-    "oxidation_states": "+1, -1",
-    "year_discovered": "1766",
-    "updated_at": "2026-08-24T02:28:59.620Z"
+    "electron_configuration": "1s2",
+    "electronegativity": "N/A",
+    "melting_point": "0.95 K",
+    "boiling_point": "4.22 K",
+    "density": "0.0001785",
+    "oxidation_states": "0",
+    "year_discovered": "1868",
+    "updated_at": "2026-08-25T02:25:36.244Z"
   }
 }
