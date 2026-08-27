@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "3",
-    "symbol": "Li",
-    "name": "Lithium",
-    "atomic_mass": "7.0",
-    "category": "Alkali metal",
+    "atomic_number": "4",
+    "symbol": "Be",
+    "name": "Beryllium",
+    "atomic_mass": "9.012183",
+    "category": "Alkaline earth metal",
     "standard_state": "Solid",
-    "electron_configuration": "[He]2s1",
-    "electronegativity": "0.98",
-    "melting_point": "453.65 K",
-    "boiling_point": "1615 K",
-    "density": "0.534",
-    "oxidation_states": "+1",
-    "year_discovered": "1817",
-    "updated_at": "2026-08-26T02:30:07.982Z"
+    "electron_configuration": "[He]2s2",
+    "electronegativity": "1.57",
+    "melting_point": "1560 K",
+    "boiling_point": "2744 K",
+    "density": "1.85",
+    "oxidation_states": "+2",
+    "year_discovered": "1798",
+    "updated_at": "2026-08-27T03:43:46.769Z"
   }
 }
