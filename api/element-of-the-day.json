@@ -1,18 +1,18 @@
 {
   "element": {
-    "atomic_number": "9",
-    "symbol": "F",
-    "name": "Fluorine",
-    "atomic_mass": "18.99840316",
-    "category": "Halogen",
+    "atomic_number": "10",
+    "symbol": "Ne",
+    "name": "Neon",
+    "atomic_mass": "20.180",
+    "category": "Noble gas",
     "standard_state": "Gas",
-    "electron_configuration": "[He]2s2 2p5",
-    "electronegativity": "3.98",
-    "melting_point": "53.53 K",
-    "boiling_point": "85.03 K",
-    "density": "0.001696",
-    "oxidation_states": "-1",
-    "year_discovered": "1670",
-    "updated_at": "2026-09-01T02:13:36.537Z"
+    "electron_configuration": "[He]2s2 2p6",
+    "electronegativity": "N/A",
+    "melting_point": "24.56 K",
+    "boiling_point": "27.07 K",
+    "density": "0.0008999",
+    "oxidation_states": "0",
+    "year_discovered": "1898",
+    "updated_at": "2026-09-02T02:24:22.593Z"
   }
 }
